@@ -6,24 +6,453 @@
     <title></title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet'  media='screen' href='covid.css'>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
    
     <script src='main.js'></script>
     
 </head>
+<style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 9rem;
+}
+
+html::-webkit-scrollbar {
+  width: 1.3rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: #111;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #29d9d5;
+  border-radius: 5rem;
+}
+
+body {
+  background:white;
+  overflow-x: hidden;
+}
+
+section {
+  padding: 3rem 9%;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.heading span {
+  color: #5b0065;
+  opacity: 0.5;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.heading h1 {
+    opacity: 0.4;
+}
+
+.btn {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 1rem 4rem;
+  font-size: 1.7rem;
+  color: #08f2ee;
+  border: 0.2rem solid #29d9d5;
+  cursor: pointer;
+  background: none;
+}
+
+.btn1{
+    margin-top: 1rem;
+    display: inline-block;
+    position: absolute;
+    padding: 1rem 4rem;
+    border-radius: 0.5rem;
+    font-size: 1.7rem;
+    color:#d9ff00;
+    font-weight:bold;
+    border: 0.2rem solid #ff6a00;
+    cursor: pointer;
+    background-color: #5a4154;
+    left: 72%;
+
+
+}
+
+.btn2{
+    margin-top: 1rem;
+    display: inline-block;
+    border-radius: 0.5rem;
+    padding: 1rem 4rem;
+    font-size: 1.7rem;
+    color:#d9ff00;
+    font-weight:bold;
+    border: 0.2rem solid #ff6a00;
+    cursor: pointer;
+    background-color: #5a4154;
+}
+
+
+.btn:hover {
+  background: #29d9d5;
+  color: #111;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: #222;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1.5rem 9%;
+}
+
+.header .navbar a {
+  font-size: 1.7rem;
+  color: rgb(255, 255, 255);
+  display: inline-block;
+  position: relative;
+  right: -70%;
+  margin: 0 1rem;
+
+}
+
+.header .navbar a:hover {
+  color: #29d9d5;
+}
+
+.header .btn {
+  margin-top: 0;
+}
+
+.logo {
+  font-size: 2.5rem;
+  color: rgb(0, 247, 255);
+  font-weight: bolder;
+  display: inline-block;
+  position: absolute;
+  left: 2%;
+}
+
+.logo i {
+  color:#a0efffb1;
+  padding-right: .5rem;
+}
+
+#menu-btn {
+  font-size: 2.5rem;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+}
+
+
+ul{
+  list-style: none;
+
+}
+
+ul li{
+  display: inline-block;
+  position:relative;
+}
+
+ul li a{
+  display: block;
+  padding: 3px 1px;
+  text-decoration: none;
+  left: 30rem;
+  font-size: 1.5rem;
+  color: #4e043d;
+}
+
+ul li ul.dropdown li{
+  display: block;
+}
+
+ul li ul.dropdown{
+  width: 100%;
+  position: absolute;
+
+  z-index: 999;
+  display: none;
+}
+
+ul li a:hover{
+  color: rgb(255, 123, 0);
+}
+
+ul li:hover ul.dropdown{
+  display: block;
+}
+
+/* ...............................Navbar End..................................... */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 9rem;
+}
+
+
+body {
+  background:white;
+  overflow-x: hidden;
+}
+
+.footer .box-container {
+    background-color: #625f5f;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(10rem, 1fr))[auto-fit];
+     grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+     gap: 2.5rem;
+    padding: 5rem;
+
+   }
+
+   .footer .box-container .box {
+     padding:-3rem 0;
+   }
+
+   .footer .box-container .box i {
+     padding-bottom: .5rem;
+     color: rgb(255, 47, 0);
+   }
+
+   .logo1 {
+     font-size: 5.5rem;
+     color: rgb(0, 247, 255);
+     font-weight: bolder;
+     display: inline-block;
+     position: absolute;
+     left: 20%;
+     margin-top: 20rem;
+   }
+
+   .footer .box-container .box h3 {
+     font-size: 2.2rem;
+     color: rgba(73, 0, 51, 0.866);
+     padding: 1rem 0;
+   }
+
+   .footer .box-container .box p {
+     font-size: 1.4rem;
+     color: rgb(255, 0, 162);
+     padding: 1rem 0;
+     line-height: 2;
+   }
+
+   .footer .box-container .box p i {
+     padding-right: .5rem;
+     color: #000000;
+   }
+
+   .footer .box-container .box .share {
+     padding-top: 1rem;
+   }
+
+   .footer .box-container .box .share a {
+     height: 4.5rem;
+     width: 4.5rem;
+     line-height: 4rem;
+     font-size: 2rem;
+     border-radius: 50%;
+     font-size: 1.7rem;
+     border: 0.2rem solid #b300ca;
+     color: #720067;
+     margin-right: .5rem;
+     text-align: center;
+   }
+
+   .footer .box-container .box .share a:hover {
+     background: #29d9d5;
+     color: #111;
+   }
+
+   .footer .box-container .box .links {
+     font-size: 1.4rem;
+     color: rgb(255, 0, 162);
+     padding: 1rem 0;
+     display: block;
+   }
+
+   .footer .box-container .box .links:hover {
+     color: #000000;
+   }
+
+   .footer .box-container .box .links:hover i {
+     padding-right: 2rem;
+   }
+
+   .footer .box-container .box .links i {
+     padding-right: .5rem;
+     color: #000000;
+   }
+
+   .footer .box-container .box form .email {
+     width: 100%;
+     border-radius: 1rem;
+     border: 0.2rem solid #330026;
+     background: none;
+     font-size: 1.5rem;
+     text-transform: none;
+     color: rgb(255, 0, 0);
+     margin-bottom: 1rem;
+     padding: 1.2rem 1.4rem;
+   }
+
+
+
+</style>
+
 <body>
-    <div class="content">
-<h1>Covid-19 Informatin Hub</h1>
-</div>
-   <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-   <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-       
+    <!-- header section starts  -->
+
+<header class="header">
+
+    <div id="menu-btn" class="fas fa-bars"></div>
+
+    <a data-aos="zoom-in-right" data-aos-delay="150" href="#" class="logo"> <i class="fas fa-plane"></i>Phoenix Airline PVT  </a>
+
+    <nav class="navbar">
+
+    <ul>
+       <li><a data-aos="zoom-in-left" data-aos-delay="300" href="#home">home</a></li>
+
+       <li>
+        <a data-aos="zoom-in-left" data-aos-delay="450" href="#about">expericence </a>
+        <ul class="dropdown">
+            <li><a href="#">Business class</a></li>
+            <li><a href="#">Economy class</a></li>
+            <li><a href="#">Entertainment</a></li>
+            <li><a href="#">Wifi</a></li>
+            <li><a href="#">Passenger service</a></li>
+        </ul>
+       </li>
+
+       <li>
+        <a data-aos="zoom-in-left" data-aos-delay="600" href="#destination">book </a>
+        <ul class="dropdown">
+            <li><a href="#">Book a flight</a></li>
+            <li><a href="#">Flight + Hotel</a></li>
+            <li><a href="#">Manage Booking</a></li>
+            <li><a href="#">Check In</a></li>
+            <li><a href="#">Book Promo Code</a></li>
+            <li><a href="#">Car Rentals 15%</a></li>
+            <li><a href="#">Global Offers</a></li>
+        </ul>
+        </li>
+
+        <li>
+        <a data-aos="zoom-in-left" data-aos-delay="750" href="#services">plan</a>
+        <ul class="dropdown">
+            <li><a href="#">Fare Types</a></li>
+            <li><a href="#">Covid-19 info hub</a></li>
+            <li><a href="#">Ways to Pay</a></li>
+            <li><a href="#">Visas & Passport</a></li>
+            <li><a href="#">Change your Booking</a></li>
+            <li><a href="#">Time table</a></li>
+            <li><a href="#">Flight status</a></li>
+            <li><a href="#">Connecting flights</a></li>
+        </ul>
+        </li>
+
+        <li>
+        <a data-aos="zoom-in-left" data-aos-delay="900" href="#gallery">fly with us </a>
+        <ul class="dropdown">
+            <li><a href="#">Business class</a></li>
+            <li><a href="#">Economy class</a></li>
+            <li><a href="#">Check-in-flights</a></li>
+            <li><a href="#">Baggage</a></li>
+            <li><a href="#">Partners</a></li>
+            <li><a href="#">Connections</a></li>
+            <li><a href="#">Airports</a></li>
+            <li><a href="#">Travel ideas</a></li>
+            <li><a href="#">Route Map</a></li>
+        </ul>
+        </li>
+
+        <li>
+        <a data-aos="zoom-in-left" data-aos-delay="1150" href="#blogs">contact </a>
+        <ul class="dropdown">
+            <li><a href="#">FAQ's</a></li>
+            <li><a href="#">Travel shops</a></li>
+        </ul>
+        </li>
+
+    </ul>
+    </nav>
+
+    <a data-aos="zoom-in-right" data-aos-delay="1300" href="" class="btn1">LogIn</a>
+    <a data-aos="zoom-in-left" data-aos-delay="1300" href="" class="btn2">SignUp</a>
+
+</header>
+
+
+
+<div class="section1">
+<div class="head">
+  <br><br><br><br><br>
+
+<h1><center>Covid-19 Information Hub</center></h1>
+</div><br><br
+   ><br>
+   
+       <div class="section2">
             <div class ="grid">
                 <div class="grid-item">
                     <div card="card">
                     
                         <img class="card-img" src="travel.jpg" alt="Travel requirements by country">
                         <div class="card-content">
-                            <h1 class="card-header">Travel requirements by country</h1>
+                            <h1 class="card-header">Travel requirements</h1>
                             <p class="card-text">Learn more about travel,testing and quarantine requirements in the country of your departure,transit or arrival. </p>
                             
                         </div>
@@ -55,9 +484,70 @@
                         </div>
                     </div>
                 </div>
-             </div>  
-            
-            
+             </div> 
+             </div> 
+  
+   <!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box" data-aos="fade-up" data-aos-delay="150">
+            <a data-aos="zoom-in-right" data-aos-delay="150" href="#" class="logo1"> <i class="fas fa-paper-plane"></i> </a>
+            <p> Phoenix Airline PVT is part of Booking Holdings Inc., the world leader in online travel & related services.</p>
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+        </div>
+
+        <div class="box" data-aos="fade-up" data-aos-delay="300">
+            <h3>quick links</h3>
+            <a href="#home" class="links"> <i class="fas fa-arrow-right"></i> home </a>
+            <a href="#about" class="links"> <i class="fas fa-arrow-right"></i> about </a>
+            <a href="#destination" class="links"> <i class="fas fa-arrow-right"></i> destination </a>
+            <a href="#services" class="links"> <i class="fas fa-arrow-right"></i> services </a>
+            <a href="#gallery" class="links"> <i class="fas fa-arrow-right"></i> gallery </a>
+            <a href="#blogs" class="links"> <i class="fas fa-arrow-right"></i> blogs </a>
+        </div>
+
+        <div class="box" data-aos="fade-up" data-aos-delay="450">
+            <h3>contact info</h3>
+            <p> <i class="fas fa-map"></i> Homagama, Sri Lanka </p>
+            <p> <i class="fas fa-phone"></i> +94-2233445 </p>
+            <p> <i class="fas fa-envelope"></i> Phoenix@gmail.com </p>
+            <p> <i class="fas fa-clock"></i> 24/7 hours </p>
+            <p> <i class="fas fa-plane"></i> Airline-fee</p>
+        </div>
+
+        <div class="box" data-aos="fade-up" data-aos-delay="450">
+            <h3>More</h3>
+            <p> <i class="fas fa-address-card"></i> about </p>
+            <p> <i class="fas fa-users"></i> careers </p>
+            <p> <i class="fas fa-mobile"></i> mobile</p>
+            <p> <i class="fas fa-search"></i> discover </p>
+            <p> <i class="fas fa-code"></i> Coupan codes </p>
+        </div>
+
+        <div class="box" data-aos="fade-up" data-aos-delay="600">
+            <h3>newsletter</h3>
+            <p>subscribe for latest updates</p>
+            <form action="">
+                <input type="email" name="" placeholder="Enter Your Email" class="email" id="">
+                <input type="submit" value="subscribe" class="btn4">
+            </form>
+        </div>
+
+    </div>
+
+
+
+</section>
+
+<!-- footer section ends -->         
 </body>
 </html>
 
