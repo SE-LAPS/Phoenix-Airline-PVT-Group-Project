@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<!-- font awesome cdn link  -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+ 
+
+</head>
+
+<style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 9rem;
+}
+
+html::-webkit-scrollbar {
+  width: 1.3rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: #111;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #29d9d5;
+  border-radius: 5rem;
+}
+
+body {
+  background:white;
+  overflow-x: hidden;
+}
+
+section {
+  padding: 3rem 9%;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.heading span {
+  color: #5b0065;
+  opacity: 0.5;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.heading h1 {
+    opacity: 0.4;
+}
+
+.btn {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 1rem 4rem;
+  font-size: 1.7rem;
+  color: #08f2ee;
+  border: 0.2rem solid #29d9d5;
+  cursor: pointer;
+  background: none;
+}
+
+.btn1{
+    margin-top: 1rem;
+    display: inline-block;
+    position: absolute;
+    padding: 1rem 4rem;
+    border-radius: 0.5rem;
+    font-size: 1.7rem;
+    color:#d9ff00;
+    font-weight:bold;
+    border: 0.2rem solid #ff6a00;
+    cursor: pointer;
+    background-color: #5a4154;
+    left: 72%;
+   
+    
+}
+
+.btn2{
+    margin-top: 1rem;
+    display: inline-block;
+    border-radius: 0.5rem;
+    padding: 1rem 4rem;
+    font-size: 1.7rem;
+    color:#d9ff00;
+    font-weight:bold;
+    border: 0.2rem solid #ff6a00;
+    cursor: pointer;
+    background-color: #5a4154;
+}
+
+
+.btn:hover {
+  background: #29d9d5;
+  color: #111;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: #222;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1.5rem 9%;
+}
+
+.header .navbar a {
+  font-size: 1.7rem;
+  color: rgb(255, 255, 255);
+  display: inline-block;
+  position: relative;
+  right: -70%;
+  margin: 0 1rem;
+  
+}
+
+.header .navbar a:hover {
+  color: #29d9d5;
+}
+
+.header .btn {
+  margin-top: 0;
+}
+
+.logo {
+  font-size: 2.5rem;
+  color: rgb(0, 247, 255);
+  font-weight: bolder;
+  display: inline-block;
+  position: absolute;
+  left: 2%;
+}
+
+.logo i {
+  color:#a0efffb1;
+  padding-right: .5rem;
+}
+
+#menu-btn {
+  font-size: 2.5rem;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+}
+
+
+ul{
+  list-style: none;
+  
+}
+
+ul li{
+  display: inline-block;
+  position:relative;
+}
+
+ul li a{
+  display: block;
+  padding: 3px 1px;
+  text-decoration: none;
+  left: 30rem;
+  font-size: 1.5rem;
+  color: #4e043d;
+}
+
+ul li ul.dropdown li{
+  display: block;
+}
+
+ul li ul.dropdown{
+  width: 100%;
+  position: absolute;
+ 
+  z-index: 999;
+  display: none;
+}
+
+ul li a:hover{
+  color: rgb(255, 123, 0);
+}
+
+ul li:hover ul.dropdown{
+  display: block;
+}
+
+/* ...............................Navbar End..................................... */
+
+</style>
+
+
+
+<body>  
+<!-- header section starts  -->
+
+<header class="header">
+
+    <div id="menu-btn" class="fas fa-bars"></div>
+
+    <a data-aos="zoom-in-right" data-aos-delay="150" href="#" class="logo"> <i class="fas fa-plane"></i>Phoenix Airline PVT  </a>
+
+    <nav class="navbar">
+
+    <ul>
+       <li><a data-aos="zoom-in-left" data-aos-delay="300" href="#home">home</a></li>
+      
+       <li>
+        <a data-aos="zoom-in-left" data-aos-delay="450" href="#about">expericence </a>
+        <ul class="dropdown">
+            <li><a href="#">Business class</a></li>
+            <li><a href="#">Economy class</a></li>
+            <li><a href="#">Entertainment</a></li>
+            <li><a href="#">Wifi</a></li>
+            <li><a href="#">Passenger service</a></li>
+        </ul>
+       </li>
+      
+       <li>
+        <a data-aos="zoom-in-left" data-aos-delay="600" href="#destination">book </a>
+        <ul class="dropdown">
+            <li><a href="#">Book a flight</a></li>
+            <li><a href="#">Flight + Hotel</a></li>
+            <li><a href="#">Manage Booking</a></li>
+            <li><a href="#">Check In</a></li>
+            <li><a href="#">Book Promo Code</a></li>
+            <li><a href="#">Car Rentals 15%</a></li>
+            <li><a href="#">Global Offers</a></li>
+        </ul>
+        </li>
+      
+        <li>
+        <a data-aos="zoom-in-left" data-aos-delay="750" href="#services">plan</a>
+        <ul class="dropdown">
+            <li><a href="#">Fare Types</a></li>
+            <li><a href="#">Covid-19 info hub</a></li>
+            <li><a href="#">Ways to Pay</a></li>
+            <li><a href="#">Visas & Passport</a></li>
+            <li><a href="#">Change your Booking</a></li>
+            <li><a href="#">Time table</a></li>
+            <li><a href="#">Flight status</a></li>
+            <li><a href="#">Connecting flights</a></li>
+        </ul>
+        </li>
+        
+        <li>
+        <a data-aos="zoom-in-left" data-aos-delay="900" href="#gallery">fly with us </a>
+        <ul class="dropdown">
+            <li><a href="#">Business class</a></li>
+            <li><a href="#">Economy class</a></li>
+            <li><a href="#">Check-in-flights</a></li>
+            <li><a href="#">Baggage</a></li>
+            <li><a href="#">Partners</a></li>
+            <li><a href="#">Connections</a></li>
+            <li><a href="#">Airports</a></li>
+            <li><a href="#">Travel ideas</a></li>
+            <li><a href="#">Route Map</a></li>
+        </ul>
+        </li>
+      
+        <li>
+        <a data-aos="zoom-in-left" data-aos-delay="1150" href="#blogs">contact </a>
+        <ul class="dropdown">
+            <li><a href="#">FAQ's</a></li>
+            <li><a href="#">Travel shops</a></li>
+        </ul>
+        </li>
+
+    </ul>
+    </nav>
+
+    <a data-aos="zoom-in-right" data-aos-delay="1300" href="" class="btn1">LogIn</a>
+    <a data-aos="zoom-in-left" data-aos-delay="1300" href="" class="btn2">SignUp</a>
+
+</header>
+
+<!-- header section ends -->
+
+
+</body>
+</html>
