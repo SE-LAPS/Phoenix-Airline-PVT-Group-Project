@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title></title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet'  media='screen' href='fare.css'>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+   
+    <script src='main.js'></script>
+    
+</head>
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+* {
+font-family: 'Poppins', sans-serif;
+margin: 0;
+padding: 0;
+-webkit-box-sizing: border-box;
+        box-sizing: border-box;
+outline: none;
+border: none;
+text-decoration: none;
+text-transform: capitalize;
+-webkit-transition: all .2s linear;
+transition: all .2s linear;
+}
+
+html {
+font-size: 62.5%;
+overflow-x: hidden;
+scroll-behavior: smooth;
+scroll-padding-top: 9rem;
+}
+
+html::-webkit-scrollbar {
+width: 1.3rem;
+}
+
+html::-webkit-scrollbar-track {
+background: #111;
+}
+
+html::-webkit-scrollbar-thumb {
+background: #29d9d5;
+border-radius: 5rem;
+}
+
+body {
+background:white;
+overflow-x: hidden;
+}
+
+section {
+padding: 3rem 9%;
+}
+
+.heading {
+text-align: center;
+margin-bottom: 2rem;
+}
+
+.heading span {
+color: #5b0065;
+opacity: 0.5;
+font-size: 3rem;
+font-weight: bold;
+}
+
+.heading h1 {
+  opacity: 0.4;
+}
+
+.btn {
+margin-top: 1rem;
+display: inline-block;
+padding: 1rem 4rem;
+font-size: 1.7rem;
+color: #08f2ee;
+border: 0.2rem solid #29d9d5;
+cursor: pointer;
+background: none;
+}
+
+.btn1{
+  margin-top: 1rem;
+  display: inline-block;
+  position: absolute;
+  padding: 1rem 4rem;
+  border-radius: 0.5rem;
+  font-size: 1.7rem;
+  color:#d9ff00;
+  font-weight:bold;
+  border: 0.2rem solid #ff6a00;
+  cursor: pointer;
+  background-color: #5a4154;
+  left: 72%;
+
+
+}
+
+.btn2{
+  margin-top: 1rem;
+  display: inline-block;
+  border-radius: 0.5rem;
+  padding: 1rem 4rem;
+  font-size: 1.7rem;
+  color:#d9ff00;
+  font-weight:bold;
+  border: 0.2rem solid #ff6a00;
+  cursor: pointer;
+  background-color: #5a4154;
+}
+
+
+.btn:hover {
+background: #29d9d5;
+color: #111;
+}
+
+.header {
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+z-index: 1000;
+background: #222;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-align: center;
+    -ms-flex-align: center;
+        align-items: center;
+-webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+padding: 1.5rem 9%;
+}
+
+.header .navbar a {
+font-size: 1.7rem;
+color: rgb(255, 255, 255);
+display: inline-block;
+position: relative;
+right: -70%;
+margin: 0 1rem;
+
+}
+
+.header .navbar a:hover {
+color: #29d9d5;
+}
+
+.header .btn {
+margin-top: 0;
+}
+
+.logo {
+font-size: 2.5rem;
+color: rgb(0, 247, 255);
+font-weight: bolder;
+display: inline-block;
+position: absolute;
+left: 2%;
+}
+
+.logo i {
+color:#a0efffb1;
+padding-right: .5rem;
+}
+
+#menu-btn {
+font-size: 2.5rem;
+color: #fff;
+cursor: pointer;
+display: none;
+}
+
+
+ul{
+list-style: none;
+
+}
+
+ul li{
+display: inline-block;
+position:relative;
+}
+
+ul li a{
+display: block;
+padding: 3px 1px;
+text-decoration: none;
+left: 30rem;
+font-size: 1.5rem;
+color: #4e043d;
+}
+
+ul li ul.dropdown li{
+display: block;
+}
+
+ul li ul.dropdown{
+width: 100%;
+position: absolute;
+
+z-index: 999;
+display: none;
+}
+
+ul li a:hover{
+color: rgb(255, 123, 0);
+}
+
+ul li:hover ul.dropdown{
+display: block;
+}
+
+/* ...............................Navbar End..................................... */
+</style>
+
+<body>
+  <!-- header section starts  -->
+
+<header class="header">
+
+  <div id="menu-btn" class="fas fa-bars"></div>
+
+  <a data-aos="zoom-in-right" data-aos-delay="150" href="#" class="logo"> <i class="fas fa-plane"></i>Phoenix Airline PVT  </a>
+
+  <nav class="navbar">
+
+  <ul>
+     <li><a data-aos="zoom-in-left" data-aos-delay="300" href="#home">home</a></li>
+
+     <li>
+      <a data-aos="zoom-in-left" data-aos-delay="450" href="#about">expericence </a>
+      <ul class="dropdown">
+          <li><a href="#">Business class</a></li>
+          <li><a href="#">Economy class</a></li>
+          <li><a href="#">Entertainment</a></li>
+          <li><a href="#">Wifi</a></li>
+          <li><a href="#">Passenger service</a></li>
+      </ul>
+     </li>
+
+     <li>
+      <a data-aos="zoom-in-left" data-aos-delay="600" href="#destination">book </a>
+      <ul class="dropdown">
+          <li><a href="#">Book a flight</a></li>
+          <li><a href="#">Flight + Hotel</a></li>
+          <li><a href="#">Manage Booking</a></li>
+          <li><a href="#">Check In</a></li>
+          <li><a href="#">Book Promo Code</a></li>
+          <li><a href="#">Car Rentals 15%</a></li>
+          <li><a href="#">Global Offers</a></li>
+      </ul>
+      </li>
+
+      <li>
+      <a data-aos="zoom-in-left" data-aos-delay="750" href="#services">plan</a>
+      <ul class="dropdown">
+          <li><a href="#">Fare Types</a></li>
+          <li><a href="#">Covid-19 info hub</a></li>
+          <li><a href="#">Ways to Pay</a></li>
+          <li><a href="#">Visas & Passport</a></li>
+          <li><a href="#">Change your Booking</a></li>
+          <li><a href="#">Time table</a></li>
+          <li><a href="#">Flight status</a></li>
+          <li><a href="#">Connecting flights</a></li>
+      </ul>
+      </li>
+
+      <li>
+      <a data-aos="zoom-in-left" data-aos-delay="900" href="#gallery">fly with us </a>
+      <ul class="dropdown">
+          <li><a href="#">Business class</a></li>
+          <li><a href="#">Economy class</a></li>
+          <li><a href="#">Check-in-flights</a></li>
+          <li><a href="#">Baggage</a></li>
+          <li><a href="#">Partners</a></li>
+          <li><a href="#">Connections</a></li>
+          <li><a href="#">Airports</a></li>
+          <li><a href="#">Travel ideas</a></li>
+          <li><a href="#">Route Map</a></li>
+      </ul>
+      </li>
+
+      <li>
+      <a data-aos="zoom-in-left" data-aos-delay="1150" href="#blogs">contact </a>
+      <ul class="dropdown">
+          <li><a href="#">FAQ's</a></li>
+          <li><a href="#">Travel shops</a></li>
+      </ul>
+      </li>
+
+  </ul>
+  </nav>
+
+  <a data-aos="zoom-in-right" data-aos-delay="1300" href="" class="btn1">LogIn</a>
+  <a data-aos="zoom-in-left" data-aos-delay="1300" href="" class="btn2">SignUp</a>
+
+</header>
+
+<div class="section1">
+<div class="head">
+  <br><br>
+<h1><center>Fare Types</center></h1>
+</div><br><br><br>
+   <p>Find the right fare type to suit your travel needs and budget, whether you want to keep travel costs down, 
+    make changes to your booking at short notice or simply arrive ready for business.<br><br>Below you'll find general terms and conditions for all Phoenix fare types and fare types of our interline and codeshare partners. You can view the detailed fare rules applicable to your fare type through Manage booking, if you've already booked with us, 
+    or you'll receive them as an attachment with your booking confirmation once you book your flight.</p>
+    
+<br><br><br>
+  <Center>  <table class="content-table">
+        <thead>
+          <tr>
+            <th></th>
+            <th>Lite</th>
+            <th>Value</th>
+            <th>Flex</th>
+            <th>Business</th>
+          </tr>
+        </thead>
+       
+        <tbody>
+          <tr>
+            <td>Hand Baggage</td>
+            <td>7kg</td>
+            <td>7kg</td>
+            <td>7kg</td>
+            <td>14kg</td>
+            
+          </tr>
+          <tr class="active-row">
+            <td>Checked baggage</td>
+            <td>At a charge</td>
+            <td>20kg</td>
+            <td>30kg</td>
+            <td>40kg</td>
+          </tr>
+          <tr>
+            <td>Meal</td>
+            <td>At a charge</td>
+            <td>included</td>
+            <td>included</td>
+            <td>included</td>
+          </tr>
+          <tr>
+            <td>Seat selection</td>
+            <td>At a charge</td>
+            <td>included</td>
+            <td>included</td>
+            <td>included</td>
+          </tr>
+          <tr>
+            <td>In flight entertainment</td>
+            <td>Buy on board</td>
+            <td>Buy on board</td>
+            <td>Buy on board</td>
+            <td>included</td>
+          </tr>
+          <tr>
+            <td>Rebooking</td>
+            <td>Not permitted</td>
+            <td>Free</td>
+            <td>Free</td>
+            <td>Free</td>
+          </tr>
+
+          <tr>
+            <td>Cancelling</td>
+            <td>Not permitted</td>
+            <td>AED 200</td>
+            <td>Free</td>
+            <td>Free</td>
+          </tr>
+        </tbody>
+      </table></Center>
+      <br><br><br>
+      <h2><center>Child and infact fares</center></h2>
+      <br><br>
+      <ul>
+
+        <li>Child fares follow the same fee structure as adult
+             fares and depend on the booking channel.</li>
+             <li>When booked on the Phoenix website, via flydubai Customer Centre or a Phoenix travel partner, 
+                the infant fare will be AED 75 per sector plus taxes.</li>
+                <li>For connecting flights (bookings with multiple sectors for a single flight),
+                     the infant fare will be AED 150 per sector plus taxes.</li>
+      </ul>
+      <br><br><br>
+      <h2><b><center>Rebooking and cancellation rules for Phoenix fares </center></b></h2>
+      <br><br>
+      <ul>
+        <li>All rebooking and cancellation fees are per person, per sector.</li>
+        <li>In case of full or partial rebooking or cancellation, any difference in fare plus rebooking or 
+            cancellation fee needs to be paid.</li>
+            <li>Partial cancellation is not allowed when the journey hasn't started. If you haven't started your journey and still want to cancel any of the flight sectors,
+                 we'll need to cancel the entire booking.</li>
+                 <li>Connection bookings can't be converted to bookings with 'stopover'.</li>
+                 <li>Cancellation refunds will be issued in the form of Phoenix voucher which can be used to pay for flydubai flights
+                     or optional extras before the expiry date mentioned on the voucher.</li>
+                     <li>For non-refundable fares, only applicable taxes will be refunded.</li>
+                     <li>Cancellation of optional extras (meal, baggage, seat) is allowed only 24 hours prior to departure.</li>
+      </ul>
+      </div>
+      
+    </body>
+    </html>
