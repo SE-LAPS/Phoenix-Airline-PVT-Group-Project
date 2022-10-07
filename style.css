@@ -230,6 +230,52 @@ ul li:hover ul.dropdown{
   display: block;
 }
 
+.search-container {
+  opacity: .6;
+  left:74%;
+  position: absolute;
+  top:13rem;
+}
+
+
+.search input[type=text] {
+  width: 18rem;
+  border-radius: 6px;
+  padding: 8px;
+  margin-top: -10rem;
+  font-size: 15px;
+  border: none;
+ 
+}
+
+.search-container button {
+  float: right;
+  padding: 6px 10px;
+  position: absolute;
+  top:-1.5rem;
+  border-radius: 20%;
+  left:105%;
+  margin-right: 16px;
+  background:yellow;
+  font-size: 19px;
+  border: none;
+  cursor: pointer;
+}
+
+.search-container button:hover {
+  background: #ccc;
+}
+
+@media screen and (max-width:600px) {
+  .topnav .search-container {
+      float: none;
+  }
+}
+
+.input[type=text] {
+  border: 1px solid #ccc;
+}
+
 .home {
   margin: 0 auto;
   margin-top: 9rem;
