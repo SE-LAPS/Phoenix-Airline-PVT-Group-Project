@@ -4,19 +4,34 @@
     font-family: 'Poppins', sans-serif;
 }
 
-.container-1{
+.container{
     width:75%;
     
     padding: 10px;
 
 }
+#showcase{
+    
+    background-position: center;
+    min-height: 300px;
+    text-align: center;
+    border-radius: 10px;
+}
+#showcase h2{
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    padding-top: 100px;
 
+}
 .ban1{
     display: none;
     height:400px;
+    width: 75%;
+    border-radius: 5px;
 }
 .info1{
     width: 100%;
+    padding-top: 15px;
 }
 .info1 h2{
     color: rgb(90, 90, 90);
@@ -39,9 +54,14 @@ table {
     width: 100%;
   }*/
 #fly{
-    font-size: 15px;
+    font-size: 13px;
     color: rgb(161, 152, 228);
     font-weight: 900;
+}
+#fly a{
+    text-decoration: none;
+    font-size: 15px;
+    color: rgb(95, 88, 145);;
 }
 .cont-3{
     display:flex;
@@ -51,22 +71,63 @@ table {
     justify-content: space-between;
 
 }
+
 .cont-4{
    width: 310px;
    height:auto; 
-   
-      float:left;
+   float:left;
    border: none;
    border-radius:5px;
    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
    
 }
+
 .cont-4 img{
     width:100%;
     height:200px;
     border-radius:5px;
     
     
+}
+.cont-5{
+    box-shadow: none;
+    width:24%;
+    
+
+}
+.cont-6{
+    padding-top: 25px;
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    
+}
+.a{
+    width: 73%;
+    float: none;
+}
+.a h2{
+    color: rgb(59, 50, 129);
+}
+.b{
+    width: 25%;
+}
+.b img{
+    width: 100%;
+    border-radius: 25%;
+}
+.cont-5 img{
+    width: 100%;
+    height: 150px;
+    box-shadow: none;
+    
+}
+.a .c6{
+    font-size: 14px;
+}
+.hr{
+    text-align: right;
 }
 #para1{
     color:rgb(51, 51, 51);
@@ -83,6 +144,7 @@ table {
 #paralink a:active{
     color: rgb(9, 16, 110);
 }
+
 .cont-4 h4,
 .cont-4 p{
     padding:15px;
@@ -91,13 +153,94 @@ table {
 .cont-4 h4{
     font-weight:900;
 }
-/*
-.cont-4{
-    height:300px;
+.cont-7{
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+.aa{
+    width: 100%;
     
-    
-}*/
+    float: none;
+}
+.aa h2{
+    color:rgb(84, 78, 133);
+    font-size: 30px;
+    text-align: center;
 
+}
+.bb{
+    padding-top: 25px;
+    padding-bottom: 20px;
+    width: 100%;
+    
+}
+.bb img{
+    width: 100%;
+}
+.aaa{
+    padding-bottom: 55px;
+    width: 100%;
+}
+.aaa h2{
+    width:20%;
+    float: left;
+    font-size: 18px;
+}
+.aaa p{
+    width: 80%;
+    float: right;
+}
+.cont-8 {
+    background-color:rgb(215, 238, 243);
+    height: auto;
+    width: 310px;
+   float:left;
+   border: none;
+   border-radius:5px;
+   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+   padding: 10px;
+}
+.cont-8 h1{
+    font-size: 50px;
+}
+.cont-9{
+    width: 75%;
+   
+    justify-content: center;
+    height: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.c6a{
+    width: 75%;
+    
+    height: auto;
+    display:flex;
+    justify-content: center;
+    margin-left: 25%;
+    
+    
+}
+#l{
+    
+    float: left;
+    width: 75%;
+    background-color: rgb(147, 153, 231);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+#r{
+    float: right;
+    width: 25%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color:rgb(82, 92, 235);
+    text-align: center;
+}
 @media only screen and (min-width: 768px) {
     .ban1{
         display: block;
@@ -105,7 +248,7 @@ table {
         padding-bottom: 10px;
     }
 
-    .container-1{
+    .container{
         width:75%;
         margin: 0 auto;
     }
@@ -117,7 +260,7 @@ table {
         
     }
 
-    .container-1{
+    .container{
         width:75%;
         margin: 0 auto;
     }
@@ -127,4 +270,5 @@ table {
         
     }
     
+}
 }
