@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>SignUp</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+         <!-- custom css file link  -->
+    <link rel="stylesheet" href="Signup.css">
+    </head>
+   
+    <body>
+      
+    <div class="container">
+    <div class="title">Registration</div>
+    <div class="content">
+        
+        
+      <form action="form.jsp" method="POST">
+          
+        <div class="user-details">
+            
+          <div class="input-box">
+            <span class="details">FULL NAME :</span>
+            <input type="text" placeholder="Enter Your Name" required name="fname" value="">
+          </div>
+            
+          <div class="input-box">
+            <span class="details">USER NAME :</span>
+            <input type="text" placeholder="Enter Your User Name" required name="uname" value="">
+          </div>
+            
+          <div class="input-box">
+            <span class="details">E-MAIL :</span>
+            <input type="text" placeholder="Enter Your E-mail" required name="email" value="">
+          </div>
+            
+          <div class="input-box">
+            <span class="details">PHONE NUMBER :</span>
+            <input type="text" placeholder="Enter Your Number" required name="pnum" value="">
+          </div>
+            
+          <div class="input-box">
+            <span class="details">ADDRESS :</span>
+            <input type="text" placeholder="Enter Your Address" required name="add" value="">
+          </div>
+            
+          <div class="input-box">
+            <span class="details">GENDER :</span>
+            <select name="gender" placeholder="Enter Your Address" required value="">
+                <option>Enter Your Address</option>
+                <option>MALE</option>
+                <option>FEMALE</option>
+                <option>OTHER</option>
+            </select>
+          </div>
+            
+          <div class="input-box">
+            <span class="details">PASSWORD :</span>
+            <input type="text" placeholder="Enter Your Password" required name="pwd" value="">
+          </div>
+            
+          <div class="input-box">
+            <span class="details">CONFIRM PASSWORD :</span>
+            <input type="text" placeholder="Confirm Your Password" required name="cpwd" value="">
+          </div>
+            
+        </div>
+             
+        <div class="button">
+                 <input type="submit" class="reg"  value="REGISTER">
+                 <input type="reset"  class="can"   value="CLEAR">
+        </div>
+          
+      </form>
+    </div>
+  </div>
+    </body>
+</html>

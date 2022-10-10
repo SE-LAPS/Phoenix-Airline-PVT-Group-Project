@@ -1,15 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet'  media='screen' href='plan.css'>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="wifi.css" type="text/css" rel="stylesheet"/>
+    <title>tripleI</title>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-   
-    <script src='main.js'></script>
-    
+    <link rel="stylesheet" href="wifi.css">
 </head>
 <style>
     @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
@@ -96,8 +94,8 @@ section {
     cursor: pointer;
     background-color: #5a4154;
     left: 72%;
-
-
+   
+    
 }
 
 .btn2{
@@ -145,7 +143,7 @@ section {
   position: relative;
   right: -70%;
   margin: 0 1rem;
-
+  
 }
 
 .header .navbar a:hover {
@@ -177,6 +175,211 @@ section {
   display: none;
 }
 
+
+ul{
+  list-style: none;
+  
+}
+
+ul li{
+  display: inline-block;
+  position:relative;
+}
+
+ul li a{
+  display: block;
+  padding: 3px 1px;
+  text-decoration: none;
+  left: 30rem;
+  font-size: 1.5rem;
+  color: #4e043d;
+}
+
+ul li ul.dropdown li{
+  display: block;
+}
+
+ul li ul.dropdown{
+  width: 100%;
+  position: absolute;
+ 
+  z-index: 999;
+  display: none;
+}
+
+ul li a:hover{
+  color: rgb(255, 123, 0);
+}
+
+ul li:hover ul.dropdown{
+  display: block;
+}
+
+/* ...............................Navbar End..................................... */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 9rem;
+}
+
+html::-webkit-scrollbar {
+  width: 1.3rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: #111;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #29d9d5;
+  border-radius: 5rem;
+}
+
+body {
+  background:white;
+  overflow-x: hidden;
+}
+
+section {
+  padding: 3rem 9%;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.heading span {
+  color: #5b0065;
+  opacity: 0.5;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.heading h1 {
+    opacity: 0.4;
+}
+
+.btn {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 1rem 4rem;
+  font-size: 1.7rem;
+  color: #08f2ee;
+  border: 0.2rem solid #29d9d5;
+  cursor: pointer;
+  background: none;
+}
+
+.btn1{
+    margin-top: 1rem;
+    display: inline-block;
+    position: absolute;
+    padding: 1rem 4rem;
+    border-radius: 0.5rem;
+    font-size: 1.7rem;
+    color:#d9ff00;
+    font-weight:bold;
+    border: 0.2rem solid #ff6a00;
+    cursor: pointer;
+    background-color: #5a4154;
+    left: 72%;
+   
+    
+}
+
+.btn2{
+    margin-top: 1rem;
+    display: inline-block;
+    border-radius: 0.5rem;
+    padding: 1rem 4rem;
+    font-size: 1.7rem;
+    color:#d9ff00;
+    font-weight:bold;
+    border: 0.2rem solid #ff6a00;
+    cursor: pointer;
+    background-color: #5a4154;
+}
+
+
+.btn:hover {
+  background: #29d9d5;
+  color: #111;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: #222;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1.5rem 9%;
+}
+
+.header .navbar a {
+  font-size: 1.7rem;
+  color: rgb(255, 255, 255);
+  display: inline-block;
+  position: relative;
+  right: -70%;
+  margin: 0 1rem;
+  
+}
+
+.header .navbar a:hover {
+  color: #29d9d5;
+}
+
+.header .btn {
+  margin-top: 0;
+}
+
+.logo {
+  font-size: 2.5rem;
+  color: rgb(0, 247, 255);
+  font-weight: bolder;
+  display: inline-block;
+  position: absolute;
+  left: 2%;
+}
+
+.logo i {
+  color:#a0efffb1;
+  padding-right: .5rem;
+}
+
+#menu-btn {
+  font-size: 2.5rem;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+}
 
 
 ul{
@@ -220,7 +423,6 @@ ul li:hover ul.dropdown{
   display: block;
 }
 
-
 /* ...............................Navbar End..................................... */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
 * {
@@ -258,18 +460,18 @@ body {
      grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
      gap: 2.5rem;
     padding: 5rem;
-
+   
    }
-
+   
    .footer .box-container .box {
      padding:-3rem 0;
    }
-
+   
    .footer .box-container .box i {
      padding-bottom: .5rem;
      color: rgb(255, 47, 0);
    }
-
+   
    .logo1 {
      font-size: 5.5rem;
      color: rgb(0, 247, 255);
@@ -279,29 +481,29 @@ body {
      left: 20%;
      margin-top: 20rem;
    }
-
+   
    .footer .box-container .box h3 {
      font-size: 2.2rem;
      color: rgba(73, 0, 51, 0.866);
      padding: 1rem 0;
    }
-
+   
    .footer .box-container .box p {
      font-size: 1.4rem;
      color: rgb(255, 0, 162);
      padding: 1rem 0;
      line-height: 2;
    }
-
+   
    .footer .box-container .box p i {
      padding-right: .5rem;
      color: #000000;
    }
-
+   
    .footer .box-container .box .share {
      padding-top: 1rem;
    }
-
+   
    .footer .box-container .box .share a {
      height: 4.5rem;
      width: 4.5rem;
@@ -314,32 +516,32 @@ body {
      margin-right: .5rem;
      text-align: center;
    }
-
+   
    .footer .box-container .box .share a:hover {
      background: #29d9d5;
      color: #111;
    }
-
+   
    .footer .box-container .box .links {
      font-size: 1.4rem;
      color: rgb(255, 0, 162);
      padding: 1rem 0;
      display: block;
    }
-
+   
    .footer .box-container .box .links:hover {
      color: #000000;
    }
-
+   
    .footer .box-container .box .links:hover i {
      padding-right: 2rem;
    }
-
+   
    .footer .box-container .box .links i {
      padding-right: .5rem;
      color: #000000;
    }
-
+   
    .footer .box-container .box form .email {
      width: 100%;
      border-radius: 1rem;
@@ -351,25 +553,22 @@ body {
      margin-bottom: 1rem;
      padding: 1.2rem 1.4rem;
    }
-
 </style>
-
-
 <body>
     <!-- header section starts  -->
 
-<header class="header">
-
-    <div id="menu-btn" class="fas fa-bars"></div>
-
-    <a data-aos="zoom-in-right" data-aos-delay="150" href="#" class="logo"> <i class="fas fa-plane"></i>Phoenix Airline PVT  </a>
-
-    <nav class="navbar">
-
-  <ul>
-       <li><a data-aos="zoom-in-left" data-aos-delay="300" href="#home">home</a></li>
+    <header class="header">
+    
+        <div id="menu-btn" class="fas fa-bars"></div>
+    
+        <a data-aos="zoom-in-right" data-aos-delay="150" href="#" class="logo"> <i class="fas fa-plane"></i>Phoenix Airline PVT  </a>
+    
+        <nav class="navbar">
+    
+         <ul>
+             <li><a href="Home.html" data-aos="zoom-in-left" data-aos-delay="300" href="#home">home</a></li>
       
-  <li>
+     <li>
     <a href="Experience.html" data-aos="zoom-in-left" data-aos-delay="450" href="#about">experience </a>
  <ul class="dropdown">
      <li><a href="business.html" href="#">Business class</a></li>
@@ -423,131 +622,95 @@ body {
      <li><a href="RouteMapFLy.html" href="#">Route Map</a></li>
  </ul>
  </li>
-
-        <li>
-        <a data-aos="zoom-in-left" data-aos-delay="1150" href="#blogs">contact </a>
-        <ul class="dropdown">
-            <li><a href="#">FAQ's</a></li>
-            <li><a href="#">Travel shops</a></li>
+          
+            <li>
+            <a data-aos="zoom-in-left" data-aos-delay="1150" href="#blogs">contact </a>
+            <ul class="dropdown">
+                <li><a href="#">FAQ's</a></li>
+                <li><a href="#">Travel shops</a></li>
+            </ul>
+            </li>
+    
         </ul>
-        </li>
-
-    </ul>
-    </nav>
-
-    <a data-aos="zoom-in-right" data-aos-delay="1300" href="" class="btn1">LogIn</a>
-    <a data-aos="zoom-in-left" data-aos-delay="1300" href="" class="btn2">SignUp</a>
-
-</header>
-    <div class="head">
-       
-        <img src="img/plane.jpg" height="500px" width="1520px">
+        </nav>
+    
+        <a data-aos="zoom-in-right" data-aos-delay="1300" href="" class="btn1">LogIn</a>
+        <a data-aos="zoom-in-left" data-aos-delay="1300" href="" class="btn2">SignUp</a>
+    
+    </header>
+    
+    <!-- header section ends -->
+    <div class="banner">    
         <div class="content">
-            <div class="sec">
-            <h1><center>Plan Your Journey</center></h1>
-            <br><br>
-            <div class="section">
-            <p>Planning your journey with us is easy.Whether you'd like to know how to find the best fares,how to pay for your booking or amend an existing booking,you'll find all the information you need here.
-                You can also apply for visas to select destinations through Phoenix. </p>
+            <h1> Onboard Wifi</h1>
         </div>
         </div>
-        <div class="container">
-            <div class="cards">
-                <div class="image" >
-        <img src="fare.jpg">
-                </div>
-                <div class="title">
-                    <h3>Flight Status</h3>
-                </div>
-                <div class="des">
-                    <p>Need to check when a flight is arriving or departing? Check the flight status here.</p>
-                    <button class="card-btn"><a href="fare.html">Find out more</a><span>&rarr;</span></button>
-                </div>
-            </div>
-            
-    
-    
-    <div class="cards">
-        <div class="image" >
-<img src="fare.jpg">
-        </div>
-        <div class="title">
-            <h3>Fare type</h3>
-        </div>
-        <div class="des">
-            <p>Find the right fare type to suit your travel needs and budget.</p>
-            <button class="card-btn"><a href="fare.html">Find out more</a><span>&rarr;</span></button>
-        </div>
-    </div>
-
-    <div class="cards">
-        <div class="image" >
-<img src="covid19.jpg">
-        </div>
-        <div class="title">
-            <h3>Covid 19 information hub</h3>
-        </div>
-        <div class="des">
-            <p>All you need to know when planning your travel with Phoenix.</p>
-            <button class="card-btn"><a href="covid.html">Find out more</a><span>&rarr;</span></button>
-        </div>
-    </div>
-
-    <div class="cards">
-        <div class="image" >
-<img src="pay.jpg">
-        </div>
-        <div class="title">
-            <h3>Ways to pay</h3>
-        </div>
-        <div class="des">
-            <p>Pay for Phoenix flights with our easy and safe payment options.</p>
-            <button class="card-btn"><a href="pay.html">Find out more</a><span>&rarr;</span></button>
-        </div>
-    </div>
-
+    <div class="section">
+        <h2>Wifi</h2>
+        <p>Connect to the internet and surf, email or message during your flight.</p>
+        <br><br>
+        <h2>Get Connected</h2>
+        <p>We’re rolling out WiFi connectivity across our fleet. So whether you ran out of time to send that last email or want to let everyone know you’re off on holiday, buy a WiFi package and get connected during your flight.</p>
+        <br><br>
+        <h5>With our onboard WiFi you'll be able to:</h5>
+        <br>
+    <div class="wifi">
+     <ul>
+        <li>> Browse the Web</li><br>
+        <li>> Send email</li><br>
+        <li>> Connect through social networks</li><br>
+        <li>> Get the latest news</li><br>
+    </ul>
 </div>
+    <div class="container">
+    <div class="gallery">
+         <img src="fl.webp">
+     </div>
 
+        
+     <div class="gallery">
+        <img src="ph.jpeg">
+                
+    </div>
 
-    <div class="cards">
-        <div class="image" >
-<img src="pass.jpg">
-        </div>
-        <div class="title">
-            <h3>Visas and Passports</h3>
-        </div>
-        <div class="des">
-            <p>Want to know more about visas? Get the information you need and apply with the Phoenix. </p>
-            <button class="card-btn"><a href="visa.html">Find out more</a><span>&rarr;</span></button>
-        </div>
+        
+    <div class="gallery">
+          <img src="pre.jpeg">
     
-    </div>
-<div class="container">
-    <div class="cards">
-        <div class="image" >
-<img src="booking.jpg">
-        </div>
-        <div class="title">
-            <h3>Change your booking</h3>
-        </div>
-        <div class="des">
-            <p>Changing or cancelling your Phoenix booking is easy.</p>
-            <button class="card-btn"><a href="pay.html"></a>Find out more<span>&rarr;</span></button>
-        </div>
-    </div>
+                
+     </div>
+     <div class="gallery">
+        <img src="fn.webp">
+  
+              
+   </div>
 
-    <div class="cards">
-        <div class="image" >
-<img src="timetable.jpg">
-        </div>
-        <div class="title">
-            <h3>Timetable</h3>
-        </div>
-        <div class="des">
-            <p>Want to know where we fly to and when enter your trip details,then choose the flights that suit you</p>
-            <button class="card-btn">Find out more<span>&rarr;</span></button>
-        </div>
-    </div>
+        </div><br><br>
+        <h2>Wifi Options</h2>
+        <p>There are three WiFi packages to choose from:</p>
+        <br><br>
+        <h4>24-hours pass</h4>
+        <p>Gives you continuous WiFi access for 24 hours. Use it during your flight when the aircraft is above 10,000 ft.</p>
+        <br><br>
+        <h4>one- way pass</h4>
+        <p>Allows you to use WiFi during one leg of your journey.</p>
+        <br><br>
+        <h4>30-minute pass (flights over 2 hours)</h4>
+        <p>Lets you to connect to the WiFi for 30 minutes from the time of purchase.</p>
+        <br>
+        <hr><br><br><br><br>
+        <h2>How much it costs</h2>
+        <br>
+        <p>Visit the WiFi page of the Airtime Inflight portal to see prices for this flight. You can pay with MasterCard, Visa or American Express. Pricing options for packages vary according to a range of factors, including the route and the length of the flight.</p>
+        <br><br>
+        <h2>More than just WiFi</h2>
+        <br>
+        <p>Through the Airtime Inflight WiFi portal, you can also monitor the progress of the flight and access flydubai.com, without purchasing a WiFi package, so you can explore travel ideas, get inspired and book your next trip.</p>
+
+
+        
+
+
 </div>
 <!-- footer section starts  -->
 
@@ -605,12 +768,17 @@ body {
 
     </div>
 
-
+  
 
 </section>
 
 <!-- footer section ends -->
+
+
     
-   </body>
-   </html>
     
+</body>
+</html>
+
+
+

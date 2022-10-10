@@ -1,0 +1,1333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airports | Phoenix Airlines</title>
+    <link rel="stylesheet" href="StyleFly.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/8570016096.js" crossorigin="anonymous"></script>
+
+</head>
+
+
+<style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 9rem;
+}
+
+html::-webkit-scrollbar {
+  width: 1.3rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: #111;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #29d9d5;
+  border-radius: 5rem;
+}
+
+body {
+  background:white;
+  overflow-x: hidden;
+}
+
+section {
+  padding: 3rem 9%;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.heading span {
+  color: #5b0065;
+  opacity: 0.5;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.heading h1 {
+    opacity: 0.4;
+}
+
+.btn {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 1rem 4rem;
+  font-size: 1.7rem;
+  color: #08f2ee;
+  border: 0.2rem solid #29d9d5;
+  cursor: pointer;
+  background: none;
+}
+
+.btn1{
+    margin-top: 1rem;
+    display: inline-block;
+    position: absolute;
+    padding: 1rem 4rem;
+    border-radius: 0.5rem;
+    font-size: 1.7rem;
+    color:#d9ff00;
+    font-weight:bold;
+    border: 0.2rem solid #ff6a00;
+    cursor: pointer;
+    background-color: #5a4154;
+    left: 72%;
+   
+    
+}
+
+.btn2{
+    margin-top: 1rem;
+    display: inline-block;
+    border-radius: 0.5rem;
+    padding: 1rem 4rem;
+    font-size: 1.7rem;
+    color:#d9ff00;
+    font-weight:bold;
+    border: 0.2rem solid #ff6a00;
+    cursor: pointer;
+    background-color: #5a4154;
+}
+
+
+.btn:hover {
+  background: #29d9d5;
+  color: #111;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: #222;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1.5rem 9%;
+}
+
+.header .navbar a {
+  font-size: 1.7rem;
+  color: rgb(255, 255, 255);
+  display: inline-block;
+  position: relative;
+  right: -70%;
+  margin: 0 1rem;
+  
+}
+
+.header .navbar a:hover {
+  color: #29d9d5;
+}
+
+.header .btn {
+  margin-top: 0;
+}
+
+.logo {
+  font-size: 2.5rem;
+  color: rgb(0, 247, 255);
+  font-weight: bolder;
+  display: inline-block;
+  position: absolute;
+  left: 2%;
+}
+
+.logo i {
+  color:#a0efffb1;
+  padding-right: .5rem;
+}
+
+#menu-btn {
+  font-size: 2.5rem;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+}
+
+
+ul{
+  list-style: none;
+  
+}
+
+ul li{
+  display: inline-block;
+ 
+}
+
+ul li a{
+  display: block;
+  padding: 3px 0px;
+  text-decoration: none;
+  left: 30rem;
+  color: #ffffff;
+}
+
+ul li ul.dropdown li{
+  display: block;
+}
+
+ul li ul.dropdown{
+border-radius: 2rem;
+  width: 35%;
+  position: absolute;
+  background-color: #64005592;
+  opacity: 0.6;
+  z-index: 1;
+  display: none;
+}
+
+
+ul li a:hover, .dropdown:hover .a{
+    color: rgb(255, 123, 0);
+  }
+
+ul li:hover ul.dropdown{
+  display: block;
+}
+
+
+/* ...............................Navbar End..................................... */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 9rem;
+}
+
+
+body {
+  background:white;
+  overflow-x: hidden;
+}
+
+.footer .box-container {
+    background-color: #625f5f;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(10rem, 1fr))[auto-fit];
+     grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+     gap: 2.5rem;
+    padding: 5rem;
+   
+   }
+   
+   .footer .box-container .box {
+     padding:-3rem 0;
+   }
+   
+   .footer .box-container .box i {
+     padding-bottom: .5rem;
+     color: rgb(255, 47, 0);
+   }
+   
+   .logo1 {
+     font-size: 5.5rem;
+     color: rgb(0, 247, 255);
+     font-weight: bolder;
+     display: inline-block;
+     position: absolute;
+     left: 20%;
+     margin-top: 20rem;
+   }
+   
+   .footer .box-container .box h3 {
+     font-size: 2.2rem;
+     color: rgba(73, 0, 51, 0.866);
+     padding: 1rem 0;
+   }
+   
+   .footer .box-container .box p {
+     font-size: 1.4rem;
+     color: rgb(255, 0, 162);
+     padding: 1rem 0;
+     line-height: 2;
+   }
+   
+   .footer .box-container .box p i {
+     padding-right: .5rem;
+     color: #000000;
+   }
+   
+   .footer .box-container .box .share {
+     padding-top: 1rem;
+   }
+   
+   .footer .box-container .box .share a {
+     height: 4.5rem;
+     width: 4.5rem;
+     line-height: 4rem;
+     font-size: 2rem;
+     border-radius: 50%;
+     font-size: 1.7rem;
+     border: 0.2rem solid #b300ca;
+     color: #720067;
+     margin-right: .5rem;
+     text-align: center;
+   }
+   
+   .footer .box-container .box .share a:hover {
+     background: #29d9d5;
+     color: #111;
+   }
+   
+   .footer .box-container .box .links {
+     font-size: 1.4rem;
+     color: rgb(255, 0, 162);
+     padding: 1rem 0;
+     display: block;
+   }
+   
+   .footer .box-container .box .links:hover {
+     color: #000000;
+   }
+   
+   .footer .box-container .box .links:hover i {
+     padding-right: 2rem;
+   }
+   
+   .footer .box-container .box .links i {
+     padding-right: .5rem;
+     color: #000000;
+   }
+   
+   .footer .box-container .box form .email {
+     width: 100%;
+     border-radius: 1rem;
+     border: 0.2rem solid #330026;
+     background: none;
+     font-size: 1.5rem;
+     text-transform: none;
+     color: rgb(255, 0, 0);
+     margin-bottom: 1rem;
+     padding: 1.2rem 1.4rem;
+   }
+
+</style>
+
+
+<body>
+    
+     <header class="header">
+
+        <div id="menu-btn" class="fas fa-bars"></div>
+    
+        <a data-aos="zoom-in-right" data-aos-delay="150" href="#" class="logo"> <i class="fas fa-plane"></i>Phoenix Airline PVT  </a>
+    
+        <nav class="navbar">
+    
+        <ul>
+            <li><a href="Home.html" data-aos="zoom-in-left" data-aos-delay="300" href="#home">home</a></li>
+          
+          <li>
+    <a href="Experience.html" data-aos="zoom-in-left" data-aos-delay="450" href="#about">experience </a>
+ <ul class="dropdown">
+     <li><a href="business.html" href="#">Business class</a></li>
+     <li><a href="economy.html" href="#">Economy class</a></li>
+     <li><a href="Entertainment.html" href="#">Entertainment</a></li>
+     <li><a href="wifi.html" href="#">Wifi</a></li>
+     <li><a href="Passenger.html" href="#">Passenger service</a></li>
+ </ul>
+</li>
+
+<li>
+ 
+ <a href="book.html" data-aos="zoom-in-left" data-aos-delay="600" href="#destination">book </a>
+ 
+ <ul class="dropdown">
+     <li><a href="book.html" href="#">Book a flight</a></li>
+     <li><a href="#">Flight + Hotel</a></li>
+     <li><a href="#">Manage Booking</a></li>
+     <li><a href="#">Check In</a></li>
+     <li><a href="#">Book Promo Code</a></li>
+     <li><a href="#">Car Rentals 15%</a></li>
+     <li><a href="#">Global Offers</a></li>
+ </ul>
+ </li>
+
+ <li>
+ <a href="plan.html" data-aos="zoom-in-left" data-aos-delay="750" href="#services">plan</a>
+ <ul class="dropdown">
+     <li><a href="fare.html" href="#">Fare Types</a></li>
+     <li><a href="covid.html" href="#">Covid-19 info hub</a></li>
+     <li><a href="pay.html" href="#">Ways to Pay</a></li>
+     <li><a href="visa.html" href="#">Visas & Passport</a></li>
+     <li><a href="#">Change your Booking</a></li>
+     <li><a href="#">Time table</a></li>
+     <li><a href="#">Flight status</a></li>
+     <li><a href="#">Connecting flights</a></li>
+ </ul>
+ </li>
+ 
+ <li>
+ <a href="FlyWithUs.html" data-aos="zoom-in-left" data-aos-delay="900" href="#gallery">fly with us </a>
+ <ul class="dropdown">
+     <li><a href="BusinessFly.html" href="#">Business class</a></li>
+     <li><a href="EconomyFly.html" href="#">Economy class</a></li>
+     <li><a href="FlightCheckInFLy.html" href="#">Check-in-flights</a></li>
+     <li><a href="BaggageFly.html" href="#">Baggage</a></li>
+     <li><a href="partnersFly.html" href="#">Partners</a></li>
+     <li><a href="ConnectionsFly.html" href="#">Connections</a></li>
+     <li><a href="AirportsFly.html" href="#">Airports</a></li>
+     <li><a href="TravelIdeas.html" href="#">Travel ideas</a></li>
+     <li><a href="RouteMapFLy.html" href="#">Route Map</a></li>
+ </ul>
+ </li>
+          
+            <li>
+            <a data-aos="zoom-in-left" data-aos-delay="1150" href="#blogs">contact </a>
+            <ul class="dropdown">
+                <li><a href="#">FAQ's</a></li>
+                <li><a href="#">Travel shops</a></li>
+            </ul>
+            </li>
+    
+        </ul>
+        </nav>
+    
+        <a data-aos="zoom-in-right" data-aos-delay="1300" href="" class="btn1">LogIn</a>
+        <a data-aos="zoom-in-left" data-aos-delay="1300" href="" class="btn2">SignUp</a>
+    
+    </header>
+    
+
+    <div class="container">
+        <section id="showcase" style="background-image: url(imgs_FlyWIthUs/10.png);">
+            <h2>Airports</h2>
+        </section>
+        
+        <article class="info1">
+            <p id="fly"><a href="#"><strong>Home</strong><i class="fa-solid fa-angles-right"></i> </a> 
+                <a href="FlyWithUs.html"><strong>Fly With Us</strong><i class="fa-solid fa-angles-right"></i> </a>
+                Airports</p>
+            
+            <p>Ensure that you are well prepared for your flight by finding out more information about all the airports that Phoenix’s fleet will take you to.</p>
+        </article>
+   
+        <div class="container-2">
+            <div class="cont-10">
+                <h2>Explore the Airports we fly to</h2>
+            </div>
+            <div class="cont-11">
+                <form>
+                    <div class="c11">
+                        <input type="text" name="nair" value="Search for airport" id="s1">
+                        <p>Filter</p>
+                        <select name="Region" id="s1">
+                        <option value="Region">Region</option>
+                        <option value="Africa">Africa</option>
+                        <option value="Central Asia">Central Asia</option>
+                        <option value="Europe">Europe</option>
+                        <option value="Indian Subcontinent">Indian Subcontinent</option>
+                        <option value="Middle East">Middle East</option>
+                        </select>
+                        <select name="Country" id="s1">
+                        <option value="Country">Country</option>
+                        <option value="Eritrea">Eritrea</option>
+                        <option value="Ethiopia">Ethiopia</option>
+                        <option value="Somalia">Somalia</option>
+                        <option value="South Sudan">South Sudan</option>
+                        <option value="Sudan">Sudan</option>
+                        <option value="Tanzania">Tanzania</option>
+                        <option value="Uganda">Uganda</option>
+                        <option value="Armenia">Armenia</option>
+                        <option value="Azerbaijan">Azerbaijan</option>
+                        <option value="Georgia">Georgia</option>
+                        <option value="Kazakhstan">Kazakhstan</option>
+                        <option value="Kyrgyzstan">Kyrgyzstan</option>
+                        <option value="Tajikistan">Tajikistan</option>
+                        <option value="Turkmenistan">Turkmenistan</option>
+                        <option value="Uzbekistan">Uzbekistan</option>
+                        
+                       
+                        </select>
+                        <select name="City" id="s1">
+                        <option value="City">City</option>
+                        <option value="Asmara">Asmara</option>
+                        <option value="Addis Ababa">Addis Ababa</option>
+                        <option value="Hargeisa	">Hargeisa	</option>
+                        <option value="Juba">Juba</option>
+                        <option value="Khartoum	">Khartoum	</option>
+                        <option value="Dar es Salaam">Dar es Salaam</option>
+                        <option value="Entebbe">Entebbe</option>
+                        <option value="Port Sudan">Port Sudan</option>
+                        <option value="Zanzibar">Zanzibar</option>
+                        <option value="	Yerevan">	Yerevan</option>
+                        <option value="Baku">Baku</option>
+                        <option value="	Batumi">	Batumi</option>
+                        <option value="	Tbilisi">	Tbilisi</option>
+                        <option value="Almaty">Almaty</option>
+                       
+
+                        </select>
+                    </div>
+                </form>
+            </div>
+            <div class="cont-12">
+                <h2>Showing airports from (Region/ Country/ City)</h2>
+                <div class="tbl1">
+                    <table>
+                        <thead>
+                            <td id="w1">Region</td>
+                            <td id="w1">Country</td>
+                            <td id="w1">CIty</td>
+                            <td id="w4">Airport</td>
+                        </thead>
+                        <!-- Africa-->
+                        <tr>
+                            <td>Africa</td>
+                            <td>Eritrea</td>
+                            <td>Asmara</td>
+                            <td>Asmara Airport</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Ethiopia</td>
+                            <td>Addis Ababa</td>
+                            <td>Addis Ababa Bole International Airport</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Somalia</td>
+                            <td>Hargeisa</td>
+                            <td>Hargeisa Airport</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>South Sudan</td>
+                            <td>Juba</td>
+                            <td>Juba International</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Sudan</td>
+                            <td>Khartoum</td>
+                            <td>Khartoum International Airport</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>Port Sudan</td>
+                            <td>Port Sudan New International 	Airport</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Tanzania</td>
+                            <td>Dar es Salaam</td>
+                            <td>Julius Nyerere International Airport</td>
+                        </tr><tr>
+                            <td></td>
+                            <td></td>
+                            <td>Zanzibar</td>
+                            <td>Abeid Amani Karume International Airport</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Uganda</td>
+                            <td>Entebbe</td>
+                            <td>Entebbe International Airport</td>
+                           
+                        </tr>
+                       
+                        <!-- Central Asia-->
+
+                        <tr>
+                            <td>Central Asia</td>
+                            <td>Armenia</td>
+                            <td>Yerevan</td>
+                            <td>Zvartnots International Airport</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Azerbaijan</td>
+                            <td>Baku</td>
+                            <td>Baku Heydar Aliyev International Airport</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Georgia</td>
+                            <td>Batumi</td>
+                            <td>Batumi International Airport</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>Tbilisi</td>
+                            <td>Tbilisi International Airport</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Kazakhstan</td>
+                            <td>Almaty</td>
+                            <td>Almaty International Airport</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>Astana</td>
+                            <td>Nursultan Nazarbayev International Airport</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Kyrgyzstan</td>
+                            <td>Bishkek</td>
+                            <td>Bishkek's Manas International Airport</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Tajikistan	</td>
+                            <td>Dushanbe	</td>
+                            <td>Dushanbe International Airport</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Turkmenistan</td>
+                            <td>Ashgabat</td>
+                            <td>Ashgabat International Airport</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Uzbekistan</td>
+                            <td>Namangan</td>
+                            <td>Namangan International Airport</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>Samarkand</td>
+                            <td>Samarkand International Airport</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>Tashkent</td>
+                            <td>Islam Karimov Tashkent International Airport</td>
+                        </tr>
+                    <!-- Europe-->
+                        <tr>
+                            <td>Europe</td>
+                            <td>Albania</td>
+                            <td>Tirana</td>
+                            <td>Tirana International Airport Nënë Tereza</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Austria</td>
+                            <td>Salzburg</td>
+                            <td>Salzburg Airport W. A. Mozart</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Belarus</td>
+                            <td>Minsk</td>
+                            <td>Minsk National Airport</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Bosnia and Herzegovina</td>
+                            <td>Sarajevo</td>
+                            <td>Sarajevo International Airport</td>
+                        </tr>
+                        <!---->
+                        <tr>
+                            <td></td>
+                            <td>Bulgaria</td>
+                            <td>Sofia</td>
+                            <td>Sofia Airport</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Croatia</td>
+                            <td>Dubrovnik	</td>
+                            <td>Dubrovnik Airport</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>Zagreb</td>
+                            <td>Zagreb International Airport</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Czech Republic</td>
+                            <td>Prague</td>
+                            <td>Václav Havel Airport Prague</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Finland</td>
+                            <td>Helsinki</td>
+                            <td>Helsinki Airport</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Greece</td>
+                            <td>Mykonos</td>
+                            <td>Mykonos International Airport</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>Santorini</td>
+                            <td>Santorini International Airport</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Hungary</td>
+                            <td>Budapest	</td>
+                            <td>Budapest Ferenc Liszt International Airport</td>
+                        </tr>
+                        <!---->
+                        <tr>
+                            <td></td>
+                            <td>Italy</td>
+                            <td>Catania	</td>
+                            <td>Catania-Fontanarossa Airport</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>Naples</td>
+                            <td>Naples International Airport</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>Pisa (Florence)</td>
+                            <td>Pisa International Airport</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Montenegro</td>
+                            <td>Tivat</td>
+                            <td>Tivat Airport</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>North Macedonia</td>
+                            <td>Skopje	</td>
+                            <td>Skopje airport</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Poland</td>
+                            <td>Krakow	</td>
+                            <td>John Paul II International Airport Kraków–Balice</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>Warsaw</td>
+                            <td>Warsaw Chopin Airport</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Romania	</td>
+                            <td>Bucharest	</td>
+                            <td>Henri Coanda Otopeni International Airport</td>
+                        </tr>
+                        <!---->
+                        <tr>
+                            <td></td>
+                            <td>Russian Federation</td>
+                            <td>Kazan</td>
+                            <td>Kazan International Airport</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>Krasnodar	</td>
+                            <td>Krasnodar International Airport</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>Makhachkala</td>
+                            <td>Makhachkala Uytash International Airport</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>Mineralnye Vody</td>
+                            <td>Mineralnye Vody Airport</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>Moscow</td>
+                            <td>Vnukovo Airport</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>Novosibirsk</td>
+                            <td>Novosibirsk Tolmachevo Airport</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>Rostov-on-Don</td>
+                            <td>Rostov-on-Don Airport</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>Samara	</td>
+                            <td>Kurumoch International Airport</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>Sochi</td>
+                            <td>Sochi International Airport</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>Ufa</td>
+                            <td>Ufa International Airport</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>Yekaterinburg</td>
+                            <td>Koltsovo International Airport</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Serbia</td>
+                            <td>Belgrade</td>
+                            <td>Belgrade Nikola Tesla Airport</td>
+                        </tr>
+                        <!---->
+                        <tr>
+                            <td></td>
+                            <td>Slovakia</td>
+                            <td>Bratislava	</td>
+                            <td>M.R.Štefánik Airport</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Slovenia	</td>
+                            <td>Ljubljana</td>
+                            <td>Ljubljana Jože Pučnik Airport</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Turkey</td>
+                            <td>Ankara</td>
+                            <td>Ankara Esenboğa Airport</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>Bodrum	</td>
+                            <td>Milas-Bodrum Airport</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>Istanbul</td>
+                            <td>Istanbul International Airport</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>Sabiha Gökçen International Airport</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>Izmir</td>
+                            <td>Izmir Adnan Menderes Airport</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>	</td>
+                            <td>Trabzon</td>
+                            <td>Trabzon Airport</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Ukraine	</td>
+                            <td>Kyiv (Kiev)</td>
+                            <td>Boryspil International Airport</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>Odesa</td>
+                            <td>Odesa International Airport</td>
+                        </tr>
+                        <!-- Indian Subcontinent-->
+                        <tr>
+                            <td>Indian Subcontinent</td>
+                            <td>Afghanistan</td>
+                            <td>Kabul</td>
+                            <td>Khwaja Rawash International Airport</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Bangladesh</td>
+                            <td>Chattogram (Chittagong)</td>
+                            <td>Shah Amanat International Airport</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>Dhaka</td>
+                            <td>Shahjalal International Airport</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>India</td>
+                            <td>Ahmedabad</td>
+                            <td>Ahmedabad Airport	</td>
+                        </tr>
+                        <!---->
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>Bengaluru (Bangalore)</td>
+                            <td>Kempegowda International Airport</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>Chennai	</td>
+                            <td>Chennai International Airport</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>Delhi</td>
+                            <td>Delhi International Airport</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>Hyderabad</td>
+                            <td>Hyderabad Rajiv Gandhi Airport</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>Kochi</td>
+                            <td>Cochin International Airport</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>Kolkata	</td>
+                            <td>Netaji Subhas Chandra Bose International Airport</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>Kozhikode	</td>
+                            <td>Kozhikode Calicut International Airport</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>Lucknow</td>
+                            <td>Lucknow Airport</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>Mumbai</td>
+                            <td>Mumbai International Airport</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>Thiruvananthapuram</td>
+                            <td>Trivandrum International Airport</td>
+                        </tr>
+                        <!---->
+                        <tr>
+                            <td></td>
+                            <td>Maldives</td>
+                            <td>Male'</td>
+                            <td>Velana International Airport</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Nepal	</td>
+                            <td>Kathmandu</td>
+                            <td>Tribhuvan International Airport</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Pakistan</td>
+                            <td>Faisalabad	</td>
+                            <td>Faisalabad International Airport</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>Karachi	</td>
+                            <td>Jinnah International Airport</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>Multan</td>
+                            <td>Multan International Airport</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>Quetta</td>
+                            <td>Quetta International Airport</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>Sialkot</td>
+                            <td>Sialkot International Airport</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Sri Lanka</td>
+                            <td>Colombo</td>
+                            <td>Colombo Bandaranaike International Airport</td>
+                        </tr>
+                        <!--Middle East-->
+                        <tr>
+                            <td>Middle East</td>
+                            <td>Bahrain</td>
+                            <td>Bahrain</td>
+                            <td>Bahrain International Airport</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Egypt</td>
+                            <td>Alexandria</td>
+                            <td>Borg El Arab Airport</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Iran</td>
+                            <td>Bandar Abbas</td>
+                            <td>Bandar Abbas International Airport</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>Esfahan</td>
+                            <td>Esfahan International Airport</td>
+                        </tr>
+                        <!---->
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>Lar</td>
+                            <td>Larestan International Airport</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>Mashhad</td>
+                            <td>Mashhad International Airport</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>Shiraz</td>
+                            <td>Shiraz International Airport</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>Tehran</td>
+                            <td>Tehran Imam Khomeini International Airport</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Iraq</td>
+                            <td>Baghdad</td>
+                            <td>Baghdad International Airport</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>Basra</td>
+                            <td>Basra International Airport</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>Erbil</td>
+                            <td>Erbil International Airport</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>Najaf</td>
+                            <td>Najaf International Airport</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>Sulaimaniyah</td>
+                            <td>Sulaymaniyah International Airport</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Israel</td>
+                            <td>Tel Aviv</td>
+                            <td>Ben Gurion Airport</td>
+                        </tr>
+                        <!---->
+                        <tr>
+                            <td></td>
+                            <td>Jordan</td>
+                            <td>Amman</td>
+                            <td>Queen Alia International Airport</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Kuwait</td>
+                            <td>Kuwait</td>
+                            <td>Kuwait International Airport, Terminal 1</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Lebanon</td>
+                            <td>Beirut</td>
+                            <td>Beirut–Rafic Hariri International Airport</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Oman</td>
+                            <td>Muscat</td>
+                            <td>Muscat International Airport</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>Salalah</td>
+                            <td>Salalah Airport</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Qatar</td>
+                            <td>Doha</td>
+                            <td>Doha International Airport</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>Hamad International Airport</td>
+                        </tr>
+                        <!---->
+                        <tr>
+                            <td></td>
+                            <td>Saudi Arabia</td>
+                            <td>Abha</td>
+                            <td>Abha international airport</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>AlUla</td>
+                            <td>Prince Abdul Majeed bin Abdulaziz International Airport</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>Dammam</td>
+                            <td>King Fahd International Airport</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>Gassim</td>
+                            <td>Gassim Regional Airport</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>Gizan</td>
+                            <td>King Abdullah bin Abdulaziz Airport</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>Ha'il</td>
+                            <td>Ha'il Regional Airport</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>Hofuf</td>
+                            <td>Al-Ahsa International Airport</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>Jeddah</td>
+                            <td>King Abdulaziz International Airport</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>Madinah</td>
+                            <td>Prince Mohammad Bin Abdulaziz International Airport</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>Riyadh</td>
+                            <td>Riyadh King Khalid International Airport</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>Tabuk</td>
+                            <td>Tabuk Regional Airport</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>Taif</td>
+                            <td>Taif Airport</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>Yanbu</td>
+                            <td>Yanbu Airport</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>United Arab Emirates</td>
+                            <td>Dubai</td>
+                            <td>Al Maktoum International Airport</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>Dubai International Airport	</td>
+                        </tr>
+                        
+                    </table>
+                </div>
+            </div>
+
+        </div>   
+    </div>
+    
+    
+    
+    <section class="footer">
+
+  <div class="box-container">
+
+      <div class="box" data-aos="fade-up" data-aos-delay="150">
+          <a data-aos="zoom-in-right" data-aos-delay="150" href="#" class="logo1"> <i class="fas fa-paper-plane"></i> </a>
+          <p> Phoenix Airline PVT is part of Booking Holdings Inc., the world leader in online travel & related services.</p>
+          <div class="share">
+              <a href="#" class="fab fa-facebook-f"></a>
+              <a href="#" class="fab fa-twitter"></a>
+              <a href="#" class="fab fa-instagram"></a>
+              <a href="#" class="fab fa-linkedin"></a>
+          </div>
+      </div>
+
+      <div class="box" data-aos="fade-up" data-aos-delay="300">
+          <h3>quick links</h3>
+          <a href="#home" class="links"> <i class="fas fa-arrow-right"></i> home </a>
+          <a href="#about" class="links"> <i class="fas fa-arrow-right"></i> about </a>
+          <a href="#destination" class="links"> <i class="fas fa-arrow-right"></i> destination </a>
+          <a href="#services" class="links"> <i class="fas fa-arrow-right"></i> services </a>
+          <a href="#gallery" class="links"> <i class="fas fa-arrow-right"></i> gallery </a>
+          <a href="#blogs" class="links"> <i class="fas fa-arrow-right"></i> blogs </a>
+      </div>
+
+      <div class="box" data-aos="fade-up" data-aos-delay="450">
+          <h3>contact info</h3>
+          <p> <i class="fas fa-map"></i> Homagama, Sri Lanka </p>
+          <p> <i class="fas fa-phone"></i> +94-2233445 </p>
+          <p> <i class="fas fa-envelope"></i> Phoenix@gmail.com </p>
+          <p> <i class="fas fa-clock"></i> 24/7 hours </p>
+          <p> <i class="fas fa-plane"></i> Airline-fee</p>
+      </div>
+
+      <div class="box" data-aos="fade-up" data-aos-delay="450">
+          <h3>More</h3>
+          <p> <i class="fas fa-address-card"></i> about </p>
+          <p> <i class="fas fa-users"></i> careers </p>
+          <p> <i class="fas fa-mobile"></i> mobile</p>
+          <p> <i class="fas fa-search"></i> discover </p>
+          <p> <i class="fas fa-code"></i> Coupan codes </p>
+      </div>
+
+      <div class="box" data-aos="fade-up" data-aos-delay="600">
+          <h3>newsletter</h3>
+          <p>subscribe for latest updates</p>
+          <form action="">
+              <input type="email" name="" placeholder="Enter Your Email" class="email" id="">
+              <input type="submit" value="subscribe" class="btn4">
+          </form>
+      </div>
+
+  </div>
+</body>
+</html>
+    

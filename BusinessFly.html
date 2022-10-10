@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Class | Phoenix Airlines</title>
+    <link rel="stylesheet" href="StyleFly.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/8570016096.js" crossorigin="anonymous"></script>
+
+</head>
+
+
+<style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 9rem;
+}
+
+html::-webkit-scrollbar {
+  width: 1.3rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: #111;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #29d9d5;
+  border-radius: 5rem;
+}
+
+body {
+  background:white;
+  overflow-x: hidden;
+}
+
+section {
+  padding: 3rem 9%;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.heading span {
+  color: #5b0065;
+  opacity: 0.5;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.heading h1 {
+    opacity: 0.4;
+}
+
+.btn {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 1rem 4rem;
+  font-size: 1.7rem;
+  color: #08f2ee;
+  border: 0.2rem solid #29d9d5;
+  cursor: pointer;
+  background: none;
+}
+
+.btn1{
+    margin-top: 1rem;
+    display: inline-block;
+    position: absolute;
+    padding: 1rem 4rem;
+    border-radius: 0.5rem;
+    font-size: 1.7rem;
+    color:#d9ff00;
+    font-weight:bold;
+    border: 0.2rem solid #ff6a00;
+    cursor: pointer;
+    background-color: #5a4154;
+    left: 72%;
+   
+    
+}
+
+.btn2{
+    margin-top: 1rem;
+    display: inline-block;
+    border-radius: 0.5rem;
+    padding: 1rem 4rem;
+    font-size: 1.7rem;
+    color:#d9ff00;
+    font-weight:bold;
+    border: 0.2rem solid #ff6a00;
+    cursor: pointer;
+    background-color: #5a4154;
+}
+
+
+.btn:hover {
+  background: #29d9d5;
+  color: #111;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: #222;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1.5rem 9%;
+}
+
+.header .navbar a {
+  font-size: 1.7rem;
+  color: rgb(255, 255, 255);
+  display: inline-block;
+  position: relative;
+  right: -70%;
+  margin: 0 1rem;
+  
+}
+
+.header .navbar a:hover {
+  color: #29d9d5;
+}
+
+.header .btn {
+  margin-top: 0;
+}
+
+.logo {
+  font-size: 2.5rem;
+  color: rgb(0, 247, 255);
+  font-weight: bolder;
+  display: inline-block;
+  position: absolute;
+  left: 2%;
+}
+
+.logo i {
+  color:#a0efffb1;
+  padding-right: .5rem;
+}
+
+#menu-btn {
+  font-size: 2.5rem;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+}
+
+
+ul{
+  list-style: none;
+  
+}
+
+ul li{
+  display: inline-block;
+ 
+}
+
+ul li a{
+  display: block;
+  padding: 3px 0px;
+  text-decoration: none;
+  left: 30rem;
+  color: #ffffff;
+}
+
+ul li ul.dropdown li{
+  display: block;
+}
+
+ul li ul.dropdown{
+border-radius: 2rem;
+  width: 35%;
+  position: absolute;
+  background-color: #64005592;
+  opacity: 0.6;
+  z-index: 1;
+  display: none;
+}
+
+
+ul li a:hover, .dropdown:hover .a{
+    color: rgb(255, 123, 0);
+  }
+
+ul li:hover ul.dropdown{
+  display: block;
+}
+
+
+/* ...............................Navbar End..................................... */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 9rem;
+}
+
+
+body {
+  background:white;
+  overflow-x: hidden;
+}
+
+.footer .box-container {
+    background-color: #625f5f;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(10rem, 1fr))[auto-fit];
+     grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+     gap: 2.5rem;
+    padding: 5rem;
+   
+   }
+   
+   .footer .box-container .box {
+     padding:-3rem 0;
+   }
+   
+   .footer .box-container .box i {
+     padding-bottom: .5rem;
+     color: rgb(255, 47, 0);
+   }
+   
+   .logo1 {
+     font-size: 5.5rem;
+     color: rgb(0, 247, 255);
+     font-weight: bolder;
+     display: inline-block;
+     position: absolute;
+     left: 20%;
+     margin-top: 20rem;
+   }
+   
+   .footer .box-container .box h3 {
+     font-size: 2.2rem;
+     color: rgba(73, 0, 51, 0.866);
+     padding: 1rem 0;
+   }
+   
+   .footer .box-container .box p {
+     font-size: 1.4rem;
+     color: rgb(255, 0, 162);
+     padding: 1rem 0;
+     line-height: 2;
+   }
+   
+   .footer .box-container .box p i {
+     padding-right: .5rem;
+     color: #000000;
+   }
+   
+   .footer .box-container .box .share {
+     padding-top: 1rem;
+   }
+   
+   .footer .box-container .box .share a {
+     height: 4.5rem;
+     width: 4.5rem;
+     line-height: 4rem;
+     font-size: 2rem;
+     border-radius: 50%;
+     font-size: 1.7rem;
+     border: 0.2rem solid #b300ca;
+     color: #720067;
+     margin-right: .5rem;
+     text-align: center;
+   }
+   
+   .footer .box-container .box .share a:hover {
+     background: #29d9d5;
+     color: #111;
+   }
+   
+   .footer .box-container .box .links {
+     font-size: 1.4rem;
+     color: rgb(255, 0, 162);
+     padding: 1rem 0;
+     display: block;
+   }
+   
+   .footer .box-container .box .links:hover {
+     color: #000000;
+   }
+   
+   .footer .box-container .box .links:hover i {
+     padding-right: 2rem;
+   }
+   
+   .footer .box-container .box .links i {
+     padding-right: .5rem;
+     color: #000000;
+   }
+   
+   .footer .box-container .box form .email {
+     width: 100%;
+     border-radius: 1rem;
+     border: 0.2rem solid #330026;
+     background: none;
+     font-size: 1.5rem;
+     text-transform: none;
+     color: rgb(255, 0, 0);
+     margin-bottom: 1rem;
+     padding: 1.2rem 1.4rem;
+   }
+
+</style>
+
+
+<body>
+    
+     <header class="header">
+
+        <div id="menu-btn" class="fas fa-bars"></div>
+    
+        <a data-aos="zoom-in-right" data-aos-delay="150" href="#" class="logo"> <i class="fas fa-plane"></i>Phoenix Airline PVT  </a>
+    
+        <nav class="navbar">
+    
+        <ul>
+            <li><a href="Home.html" data-aos="zoom-in-left" data-aos-delay="300" href="#home">home</a></li>
+          
+  <li>
+    <a href="Experience.html" data-aos="zoom-in-left" data-aos-delay="450" href="#about">experience </a>
+ <ul class="dropdown">
+     <li><a href="business.html" href="#">Business class</a></li>
+     <li><a href="economy.html" href="#">Economy class</a></li>
+     <li><a href="Entertainment.html" href="#">Entertainment</a></li>
+     <li><a href="wifi.html" href="#">Wifi</a></li>
+     <li><a href="Passenger.html" href="#">Passenger service</a></li>
+ </ul>
+</li>
+
+<li>
+ 
+ <a href="book.html" data-aos="zoom-in-left" data-aos-delay="600" href="#destination">book </a>
+ 
+ <ul class="dropdown">
+     <li><a href="book.html" href="#">Book a flight</a></li>
+     <li><a href="#">Flight + Hotel</a></li>
+     <li><a href="#">Manage Booking</a></li>
+     <li><a href="#">Check In</a></li>
+     <li><a href="#">Book Promo Code</a></li>
+     <li><a href="#">Car Rentals 15%</a></li>
+     <li><a href="#">Global Offers</a></li>
+ </ul>
+ </li>
+
+ <li>
+ <a href="plan.html" data-aos="zoom-in-left" data-aos-delay="750" href="#services">plan</a>
+ <ul class="dropdown">
+     <li><a href="fare.html" href="#">Fare Types</a></li>
+     <li><a href="covid.html" href="#">Covid-19 info hub</a></li>
+     <li><a href="pay.html" href="#">Ways to Pay</a></li>
+     <li><a href="visa.html" href="#">Visas & Passport</a></li>
+     <li><a href="#">Change your Booking</a></li>
+     <li><a href="#">Time table</a></li>
+     <li><a href="#">Flight status</a></li>
+     <li><a href="#">Connecting flights</a></li>
+ </ul>
+ </li>
+ 
+ <li>
+ <a href="FlyWithUs.html" data-aos="zoom-in-left" data-aos-delay="900" href="#gallery">fly with us </a>
+ <ul class="dropdown">
+     <li><a href="BusinessFly.html" href="#">Business class</a></li>
+     <li><a href="EconomyFly.html" href="#">Economy class</a></li>
+     <li><a href="FlightCheckInFLy.html" href="#">Check-in-flights</a></li>
+     <li><a href="BaggageFly.html" href="#">Baggage</a></li>
+     <li><a href="partnersFly.html" href="#">Partners</a></li>
+     <li><a href="ConnectionsFly.html" href="#">Connections</a></li>
+     <li><a href="AirportsFly.html" href="#">Airports</a></li>
+     <li><a href="TravelIdeas.html" href="#">Travel ideas</a></li>
+     <li><a href="RouteMapFLy.html" href="#">Route Map</a></li>
+ </ul>
+ </li>
+          
+            <li>
+            <a data-aos="zoom-in-left" data-aos-delay="1150" href="#blogs">contact </a>
+            <ul class="dropdown">
+                <li><a href="#">FAQ's</a></li>
+                <li><a href="#">Travel shops</a></li>
+            </ul>
+            </li>
+    
+        </ul>
+        </nav>
+    
+        <a data-aos="zoom-in-right" data-aos-delay="1300" href="" class="btn1">LogIn</a>
+        <a data-aos="zoom-in-left" data-aos-delay="1300" href="" class="btn2">SignUp</a>
+    
+    </header>
+
+<body>
+    
+    <!--
+    <img class="ban1" src="" alt="FlyWithUs_PhoenixAir">-->
+
+    <div class="container">
+        <section id="showcase" style="background-image: url(imgs_FlyWIthUs/Businessman-with-suit-sitting-in-business-first-class-1200x854.jpg);">
+            
+            <h2>Business Class</h2>
+            
+            
+        </section>
+        
+        <article class="info1">
+            <p id="fly"><a href="#"><strong>Home</strong><i class="fa-solid fa-angles-right"></i> </a> 
+                <a href="FlyWithUs.html"><strong>Fly With Us</strong><i class="fa-solid fa-angles-right"></i> </a>
+                Business Class</p>
+            
+            <p>Book Business Class flights with Phoenix Airlines and get a superior travel experience from the moment you arrive at the airport to the second you step off the aircraft in your destination. Convenient and comfortable, Business Class with Phoenix Airlines is the ultimate way to fly.</p>
+        </article>
+   
+        
+            <div class="container-2">
+
+                <div class="cont-6">
+                    
+                    <div class="cont-5">
+                        <img src="imgs_FlyWIthUs/1519018526679.jpg" alt="business-class1">
+                    </div>
+                    <div class="cont-5">
+                        <img src="imgs_FlyWIthUs/Business-Class2.jpg" alt="business-class2">
+                    </div>
+                    <div class="cont-5">
+                        <img src="imgs_FlyWIthUs/fleet-A330-300-6.jpg" alt="business-class3">
+                    </div>
+                    <div class="cont-5">
+                        <img src="imgs_FlyWIthUs/SrilankanAirlines_OS3-1024x683.jpg" alt="business-class4">
+                    </div>
+                </div>
+
+                <div class="cont-6">
+                    <div class="a">
+                        <h2>Sit Back & Relax</h2><br>
+                        <p class="c6">Our Business Class seats of our aircrafts offer you extra comfort with wide seats and more legroom, giving you the space you need to relax during your flight. Crafted from Italian leather, they’re the perfect place to unwind, enjoy the onboard entertainment or get some sleep as we take you to your destination in the most relaxing environment possible.
+    
+                            Aboard our Boeing 737 MAX aircraft, we offer enhanced relaxation. Enjoy all the benefits of Business Class before reclining your spacious seat into its flatbed position to allow you the opportunity to drift off to sleep.</p>
+                    </div>
+                    <div class="b">
+                        <img src="imgs_FlyWIthUs/44.png" alt="Sit_back&_Relax">
+                    </div>  
+                </div>
+                <div class="cont-6">
+
+                    <div class="b">
+                        <img src="imgs_FlyWIthUs/3.png" alt="Stay_connected">
+                    </div>
+
+                    <div class="a">
+                        <h2 class="hr">Stay Connected</h2><br>
+                        <p class="c6">Stay connected with our onboard WiFi packages and you won’t have to worry about losing connection while you’re travelling. Most of our fleet is fully equipped with onboard WiFi to allow you to stay in touch with the office, keep abreast of happenings with emails and ensure you arrive at your destination fully prepared to do business. In Business Class, you can turn your seat into your own personal office, with a fold out desk allowing you to make the most of a fully flexible workspace, so you’ll never miss out on what’s important.</p>
+                    </div>
+                      
+                </div>
+                <div class="cont-6">
+                    <div class="a">
+                        <h2>Immerse Yourself</h2><br>
+                        <p class="c6">For a more relaxing journey, sink into your spacious seat and enjoy the copious entertainment options available at your fingertips. Every Business Class passenger has their own personal 12.1-inch touchscreen in our Boeing 737-800 aircraft and 15.6-inch 1080p touchscreen in our Boeing 737 MAX aircraft - packed with enough entertainment to keep you busy from take-off to landing. Catch up with boxsets of the latest hit TV shows, indulge in a raft of blockbuster movies, or challenge yourself with a game from our collection.</p>
+                    </div>
+                    <div class="b">
+                        <img src="imgs_FlyWIthUs/1.png" alt="Immerse_yourself">
+                    </div>  
+                </div>
+                <div class="cont-6">
+
+                    <div class="b">
+                        <img src="imgs_FlyWIthUs/2.png" alt="Refresh_yourself">
+                    </div>
+
+                    <div class="a">
+                        <h2 class="hr">Refresh yourself</h2><br>
+                        <p class="c6">
+                            Savour a selection of delicious meals, snacks, and complimentary hot and cold beverages when you travel in Business Class. Our internationally-inspired menu is customised to suit every palate, serving up wholesome breakfast, lunch, and dinner. Your inflight food and beverage options will differ depending on your destination. Sit back and enjoy at-seat service by a dedicated business class cabin crew while cruising to your destination.</p>
+                    </div>
+                      
+                </div>
+
+                <div class="cont-7">
+
+                    <div class="aa">
+                        <h2>Ultimate comfort every step of the way </h2><br>
+                        <p class="c7">
+                            Your Business Class flyer experience isn’t just confined to your time in the air - you’ll enjoy a premium service from the moment you arrive at the airport. We offer dedicated Business Class check-in desks for your convenience. And to minimise queues even further, at selected airports, we also offer a priority service for fast-tracking through both security and baggage collection.
+
+                            If you’re flying from Terminal 2 of Sri Lankan International Airport , head to the Phoenix Airline Business Class lounge. Set across two floors, the exclusive space has everything you need before you board your flight, from refreshments, snacks and hot food, to free WiFi, LCD TVs, and reading materials. Simply select your chosen environment – bistro style seating is available on the first floor while snacks and beverages are served upstairs  – and while away the time before your flight with the ultimate in luxury lounges.
+
+                            If your flight is departing from Terminal 3 of Sri Lankan International Airport, you can relax and unwind at Phoenix Airlines Business Class Lounge before heading to your flight.
+
+                            When you book Business Class with Phoenix Airlines, your experience is our priority. That’s why we offer you the best facilities and experience every step of the way.</p>
+                    </div>
+     
+                </div>
+                <div class="cont-7">
+
+                    <div class="aa">
+                        <h2>The dedicated Business Team </h2><br>
+                        <p class="c7">
+                            The dedicated Business Team is there for you; 24 hours a day, seven days a week. Whether you want to book your flight, change a booking, select your seat or choose a meal, they’re ready to help.</p>
+                    </div>
+
+                    <div class="bb">
+                        <img src="imgs_FlyWIthUs/SriLankan-Airlines-celebrates-reopening-of-Indian-skies-by-doubling-weekly-flights-to-India.jpg" alt="Business Team">
+                    </div>
+
+                    <hr>
+                      
+                </div>
+                <div class="cont-7">
+
+                    <div class="aaa">
+                        <h2>By Phone</h2>
+                        <p>Call our Customer Centre on 011 855 966 within the UAE, or
+                            +94 11 855 966 outside the Sri Lanka, and get help from one of our dedicated Business Team members.</p>
+                    </div><hr>
+
+                    <div class="aaa">
+                        <h2>By Email</h2>
+                        <p>Email your questions to BusinessTeam@Phoenixairlines.com and they will be answered by a member of our dedicated Business Team.</p>
+                    </div><hr>
+
+                    <div class="aaa">
+                        <h2>By SMS</h2>
+                        <p>SMS the Business Team on +971 855 966 with your booking reference and they will call you back to select your seat, choose a meal or help with any enquiry you may have. Please note this service is only available to Business Class passengers with a valid booking.</p>
+                    </div>
+                   
+                </div>
+                <hr><br><br><br>
+                <div class="cont-3">
+                    <div class="cont-4">
+                        <a href="EconomyFly.html">
+                        <img src="imgs_FlyWIthUs/underscored-flying-in-economy-more-comfortably-lead.jpg" alt="EconomyFacilitiesPhoenix"> </a>
+                        <h4>Economy Class</h4>
+                        <p id="para1">Travel for less budget and in exclusivity in Phoenix Airlines Economy Class.</p>
+                        <p id="paralink"><a href="EconomyFly.html">Learn about Economy Class..   <i class="fa-solid fa-arrow-right"></i> </a></p>
+                    </div>
+                    <div class="cont-4">
+                        <a href="FlightCheckInFLy.html">
+                        <img src="imgs_FlyWIthUs/Benefits-of-online-check-in-600x570.jpg" alt="FlightChekInPhoenix"></a>
+                        <h4>Flight Check In</h4>
+                        <p id="para1">Check In for flights</p>
+                        <p id="paralink"><a href="FlightCheckInFLy.html">Check In for your Flight..   <i class="fa-solid fa-arrow-right"></i> </a></p>
+                    </div>
+                    <div class="cont-4">
+                        <a href="BaggageFly.html">
+                        <img src="imgs_FlyWIthUs/5ae58657dbd57a80c766e66d22528d47.jfif" alt="BaggageLimitsPhoenix"></a>
+                        <h4>Baggage</h4>
+                        <p id="para1">Would you like to know how much baggage you can bring? Read our baggage guidelines.</p>
+                        <p id="paralink"><a href="BaggageFly.html"> Find Out More..   <i class="fa-solid fa-arrow-right"></i> </a></p>
+                    </div>
+                </div>
+
+                
+    
+            </div> 
+    </div>
+<section class="footer">
+
+  <div class="box-container">
+
+      <div class="box" data-aos="fade-up" data-aos-delay="150">
+          <a data-aos="zoom-in-right" data-aos-delay="150" href="#" class="logo1"> <i class="fas fa-paper-plane"></i> </a>
+          <p> Phoenix Airline PVT is part of Booking Holdings Inc., the world leader in online travel & related services.</p>
+          <div class="share">
+              <a href="#" class="fab fa-facebook-f"></a>
+              <a href="#" class="fab fa-twitter"></a>
+              <a href="#" class="fab fa-instagram"></a>
+              <a href="#" class="fab fa-linkedin"></a>
+          </div>
+      </div>
+
+      <div class="box" data-aos="fade-up" data-aos-delay="300">
+          <h3>quick links</h3>
+          <a href="#home" class="links"> <i class="fas fa-arrow-right"></i> home </a>
+          <a href="#about" class="links"> <i class="fas fa-arrow-right"></i> about </a>
+          <a href="#destination" class="links"> <i class="fas fa-arrow-right"></i> destination </a>
+          <a href="#services" class="links"> <i class="fas fa-arrow-right"></i> services </a>
+          <a href="#gallery" class="links"> <i class="fas fa-arrow-right"></i> gallery </a>
+          <a href="#blogs" class="links"> <i class="fas fa-arrow-right"></i> blogs </a>
+      </div>
+
+      <div class="box" data-aos="fade-up" data-aos-delay="450">
+          <h3>contact info</h3>
+          <p> <i class="fas fa-map"></i> Homagama, Sri Lanka </p>
+          <p> <i class="fas fa-phone"></i> +94-2233445 </p>
+          <p> <i class="fas fa-envelope"></i> Phoenix@gmail.com </p>
+          <p> <i class="fas fa-clock"></i> 24/7 hours </p>
+          <p> <i class="fas fa-plane"></i> Airline-fee</p>
+      </div>
+
+      <div class="box" data-aos="fade-up" data-aos-delay="450">
+          <h3>More</h3>
+          <p> <i class="fas fa-address-card"></i> about </p>
+          <p> <i class="fas fa-users"></i> careers </p>
+          <p> <i class="fas fa-mobile"></i> mobile</p>
+          <p> <i class="fas fa-search"></i> discover </p>
+          <p> <i class="fas fa-code"></i> Coupan codes </p>
+      </div>
+
+      <div class="box" data-aos="fade-up" data-aos-delay="600">
+          <h3>newsletter</h3>
+          <p>subscribe for latest updates</p>
+          <form action="">
+              <input type="email" name="" placeholder="Enter Your Email" class="email" id="">
+              <input type="submit" value="subscribe" class="btn4">
+          </form>
+      </div>
+
+  </div>
+</body>
+</html>
+    

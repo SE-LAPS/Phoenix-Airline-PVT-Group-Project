@@ -181,21 +181,20 @@ section {
 
 ul{
   list-style: none;
-
+  
 }
 
 ul li{
   display: inline-block;
-  position:relative;
+ 
 }
 
 ul li a{
   display: block;
-  padding: 3px 1px;
+  padding: 3px 0px;
   text-decoration: none;
   left: 30rem;
-  font-size: 1.5rem;
-  color: #4e043d;
+  color: #ffffff;
 }
 
 ul li ul.dropdown li{
@@ -203,16 +202,19 @@ ul li ul.dropdown li{
 }
 
 ul li ul.dropdown{
-  width: 100%;
+border-radius: 2rem;
+  width: 35%;
   position: absolute;
-
-  z-index: 999;
+  background-color: #64005592;
+  opacity: 0.6;
+  z-index: 1;
   display: none;
 }
 
-ul li a:hover{
-  color: rgb(255, 123, 0);
-}
+
+ul li a:hover, .dropdown:hover .a{
+    color: rgb(255, 123, 0);
+  }
 
 ul li:hover ul.dropdown{
   display: block;
@@ -356,8 +358,6 @@ body {
 
 
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <body>
      <!-- header section starts  -->
 
@@ -370,60 +370,62 @@ body {
     <nav class="navbar">
 
     <ul>
-       <li><a data-aos="zoom-in-left" data-aos-delay="300" href="#home">home</a></li>
+        <li><a href="Home.html" data-aos="zoom-in-left" data-aos-delay="300" href="#home">home</a></li>
 
-       <li>
-        <a data-aos="zoom-in-left" data-aos-delay="450" href="#about">expericence </a>
-        <ul class="dropdown">
-            <li><a href="#">Business class</a></li>
-            <li><a href="#">Economy class</a></li>
-            <li><a href="#">Entertainment</a></li>
-            <li><a href="#">Wifi</a></li>
-            <li><a href="#">Passenger service</a></li>
-        </ul>
-       </li>
+    <li>
+    <a href="Experience.html" data-aos="zoom-in-left" data-aos-delay="450" href="#about">experience </a>
+ <ul class="dropdown">
+     <li><a href="business.html" href="#">Business class</a></li>
+     <li><a href="economy.html" href="#">Economy class</a></li>
+     <li><a href="Entertainment.html" href="#">Entertainment</a></li>
+     <li><a href="wifi.html" href="#">Wifi</a></li>
+     <li><a href="Passenger.html" href="#">Passenger service</a></li>
+ </ul>
+</li>
 
-       <li>
-        <a data-aos="zoom-in-left" data-aos-delay="600" href="#destination">book </a>
-        <ul class="dropdown">
-            <li><a href="#">Book a flight</a></li>
-            <li><a href="#">Flight + Hotel</a></li>
-            <li><a href="#">Manage Booking</a></li>
-            <li><a href="#">Check In</a></li>
-            <li><a href="#">Book Promo Code</a></li>
-            <li><a href="#">Car Rentals 15%</a></li>
-            <li><a href="#">Global Offers</a></li>
-        </ul>
-        </li>
+<li>
+ 
+ <a href="book.html" data-aos="zoom-in-left" data-aos-delay="600" href="#destination">book </a>
+ 
+ <ul class="dropdown">
+     <li><a href="book.html" href="#">Book a flight</a></li>
+     <li><a href="#">Flight + Hotel</a></li>
+     <li><a href="#">Manage Booking</a></li>
+     <li><a href="#">Check In</a></li>
+     <li><a href="#">Book Promo Code</a></li>
+     <li><a href="#">Car Rentals 15%</a></li>
+     <li><a href="#">Global Offers</a></li>
+ </ul>
+ </li>
 
-        <li>
-        <a data-aos="zoom-in-left" data-aos-delay="750" href="#services">plan</a>
-        <ul class="dropdown">
-            <li><a href="#">Fare Types</a></li>
-            <li><a href="#">Covid-19 info hub</a></li>
-            <li><a href="#">Ways to Pay</a></li>
-            <li><a href="#">Visas & Passport</a></li>
-            <li><a href="#">Change your Booking</a></li>
-            <li><a href="#">Time table</a></li>
-            <li><a href="#">Flight status</a></li>
-            <li><a href="#">Connecting flights</a></li>
-        </ul>
-        </li>
-
-        <li>
-        <a data-aos="zoom-in-left" data-aos-delay="900" href="#gallery">fly with us </a>
-        <ul class="dropdown">
-            <li><a href="#">Business class</a></li>
-            <li><a href="#">Economy class</a></li>
-            <li><a href="#">Check-in-flights</a></li>
-            <li><a href="#">Baggage</a></li>
-            <li><a href="#">Partners</a></li>
-            <li><a href="#">Connections</a></li>
-            <li><a href="#">Airports</a></li>
-            <li><a href="#">Travel ideas</a></li>
-            <li><a href="#">Route Map</a></li>
-        </ul>
-        </li>
+ <li>
+ <a href="plan.html" data-aos="zoom-in-left" data-aos-delay="750" href="#services">plan</a>
+ <ul class="dropdown">
+     <li><a href="fare.html" href="#">Fare Types</a></li>
+     <li><a href="covid.html" href="#">Covid-19 info hub</a></li>
+     <li><a href="pay.html" href="#">Ways to Pay</a></li>
+     <li><a href="visa.html" href="#">Visas & Passport</a></li>
+     <li><a href="#">Change your Booking</a></li>
+     <li><a href="#">Time table</a></li>
+     <li><a href="#">Flight status</a></li>
+     <li><a href="#">Connecting flights</a></li>
+ </ul>
+ </li>
+ 
+ <li>
+ <a href="FlyWithUs.html" data-aos="zoom-in-left" data-aos-delay="900" href="#gallery">fly with us </a>
+ <ul class="dropdown">
+     <li><a href="BusinessFly.html" href="#">Business class</a></li>
+     <li><a href="EconomyFly.html" href="#">Economy class</a></li>
+     <li><a href="FlightCheckInFLy.html" href="#">Check-in-flights</a></li>
+     <li><a href="BaggageFly.html" href="#">Baggage</a></li>
+     <li><a href="partnersFly.html" href="#">Partners</a></li>
+     <li><a href="ConnectionsFly.html" href="#">Connections</a></li>
+     <li><a href="AirportsFly.html" href="#">Airports</a></li>
+     <li><a href="TravelIdeas.html" href="#">Travel ideas</a></li>
+     <li><a href="RouteMapFLy.html" href="#">Route Map</a></li>
+ </ul>
+ </li>
 
         <li>
         <a data-aos="zoom-in-left" data-aos-delay="1150" href="#blogs">contact </a>
