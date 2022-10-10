@@ -17,7 +17,7 @@ public class Flights {
 
     void addFlights(String bname, String badd, String bpeople,String btime,String bdate,String bnumber) {
          connectToDb();
-         String sql = "insert into books(name,address,people,time,date,number) VALUES ('"+bname+"','"+badd+"','"+bpeople+"','"+btime+"','"+bdate+"','"+bnumber+"')";
+         String sql = "insert into flight (name,address,people,time,date,phone_number) VALUES ('"+bname+"','"+badd+"','"+bpeople+"','"+btime+"','"+bdate+"','"+bnumber+"')";
 
     try {
         st.executeUpdate(sql);
@@ -28,7 +28,7 @@ public class Flights {
     }
     
     private void connectToDb() {
-        String url ="jdbc:mysql://localhost:3306/flightbook";
+        String url ="jdbc:mysql://localhost:3306/flightbookdb";
         try{
             Class.forName("com.mysql.jdbc.Driver");
             Connection con = DriverManager.getConnection(url,"root","");
